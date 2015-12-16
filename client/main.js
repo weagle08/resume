@@ -6,5 +6,5 @@ export function configure(aurelia) {
         .standardConfiguration()
         .developmentLogging();
     
-    aurelia.start().then(a => a.setRoot('vvm/app', document.body));
+    aurelia.start().then(a => a.setRoot());
 }

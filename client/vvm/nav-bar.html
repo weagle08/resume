@@ -1,8 +1,0 @@
-<template bindable="router">
-    <div class="ui fixed inverted menu">
-        <a class="header item" href="#">aurelia-start</a>
-        <a repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''} item" href.bind="row.href">
-            ${row.title}
-        </a>
-    </div>
-</template>
