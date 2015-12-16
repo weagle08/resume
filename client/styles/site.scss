@@ -1,0 +1,30 @@
+﻿.splash {
+  text-align: center;
+  margin: 1.5rem 0 0 0;
+  box-sizing: border-box;
+
+  .message {
+    font-size: 4rem;
+    line-height: 4rem;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 0 1rem;
+    text-transform: uppercase;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  .fa-spinner {
+    text-align: center;
+    display: inline-block;
+    font-size: 4rem;
+    margin-top: 3rem;
+  }
+}
+
+.main {
+  &.container {
+    margin-top: 7rem;
+  }
+}
+
+.ui.menu .item img.logo {
+    margin-right: 1rem;
+}
