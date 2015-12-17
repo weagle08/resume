@@ -1,4 +1,6 @@
-﻿.splash {
+﻿$menu-color: #000020;
+
+.splash {
   text-align: center;
   margin: 1.5rem 0 0 0;
   box-sizing: border-box;
@@ -19,12 +21,7 @@
   }
 }
 
-.main {
-  &.container {
-    margin-top: 7rem;
-  }
-}
-
-.ui.menu .item img.logo {
-    margin-right: 1rem;
+.heading-section {
+  background: $menu-color !important;
+  color: #fff !important;
 }
