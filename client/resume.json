@@ -1,0 +1,45 @@
+{
+  "info":{
+    "name": "Ben Johnson",
+    "email": "",
+    "phone": "334-740-6353"
+  },
+  "skills": [
+    {
+      "languages":
+              [
+                {"display": "es6", "icon": "es6-logo.png"},
+                {"display": "javascript", "icon": "javascript"},
+                {"display": "html5", "icon":"html5"},
+                {"display": "css3", "icon": "css3"}
+              ]
+    },
+    {
+      "technologies":
+              [
+
+              ]
+    },
+    {
+      "tools":
+              [
+
+              ]
+    },
+    {
+      "process":
+              [
+
+              ]
+    }
+  ],
+  "experience":[
+
+  ],
+  "projects":[
+
+  ],
+  "education":[
+
+  ]
+}

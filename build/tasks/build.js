@@ -48,6 +48,18 @@ gulp.task('move-config', function(){
 		.pipe(gulp.dest(paths.output));
 });
 
+gulp.task('move-json', function(){
+	return gulp.src(paths.json)
+		.pipe(changed(paths.output))
+		.pipe(gulp.dest(paths.output));
+});
+
+gulp.task('move-images', function(){
+	return gulp.src(paths.images)
+		.pipe(changed(paths.output))
+		.pipe(gulp.dest(paths.output + 'images'));
+});
+
 gulp.task('move-jspm', function(){
 	return gulp.src(paths.jspm)
 			.pipe(changed(paths.jspmOut))
@@ -57,7 +69,7 @@ gulp.task('move-jspm', function(){
 gulp.task('build', function(callback){
 	return runSequence(
 		'clean',
-		['build-system', 'build-html', 'build-sass', 'build-css', 'move-jspm', 'move-config'],
+		['build-system', 'build-html', 'build-sass', 'build-css', 'move-jspm', 'move-config', 'move-images', 'move-json'],
 		callback
 	);
 });

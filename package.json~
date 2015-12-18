@@ -1,7 +1,7 @@
 {
-  "name": "resume",
+  "name": "acd-client",
   "version": "1.0.0",
-  "description": "resume",
+  "description": "acd client",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,11 +13,10 @@
     },
     "dependencies": {
       "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0-beta.1",
-      "aurelia-framework": "npm:aurelia-framework@^1.0.0-beta.1.0.5",
+      "aurelia-framework": "npm:aurelia-framework@^1.0.0-beta.1.0.2",
       "components/jquery": "github:components/jquery@^2.1.4",
       "css": "github:systemjs/plugin-css@^0.1.20",
       "font-awesome": "npm:font-awesome@^4.5.0",
-      "json": "github:systemjs/plugin-json@^0.1.0",
       "semantic-ui": "github:Semantic-Org/Semantic-UI@^2.1.6"
     },
     "devDependencies": {

@@ -21,6 +21,7 @@ gulp.task('watch', ['serve'], function() {
     gulp.watch(paths.sass, ['build-sass'], browserSync.reload).on('change', reportChange);
     gulp.watch(paths.jspm, ['move-jspm'], browserSync.reload).on('change', reportChange);
     gulp.watch(paths.config, ['move-config'], browserSync.reload).on('change', reportChange);
+    gulp.watch(paths.json, ['move-json'], browserSync.reload).on('change', reportChange);
     //gulp.watch(['data/**/*.js'], ['mocha-server-test']).on('change', reportChange);
 });
 
@@ -31,5 +32,6 @@ gulp.task('watch-proxy', ['serve-proxy', 'mocha-server-test'], function() {
     gulp.watch(paths.sass, ['build-sass'], browserSync.reload).on('change', reportChange);
     gulp.watch(paths.jspm, ['move-jspm'], browserSync.reload).on('change', reportChange);
     gulp.watch(paths.config, ['move-config'], browserSync.reload).on('change', reportChange);
+    gulp.watch(paths.json, ['move-json'], browserSync.reload).on('change', reportChange);
     gulp.watch(['data/**/*.js'], ['mocha-server-test']).on('change', reportChange);
 });
