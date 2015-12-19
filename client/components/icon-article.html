@@ -1,0 +1,11 @@
+<template bindable="article">
+    <require from="./article-header.html"></require>
+    <require from="./icon-card.html"></require>
+
+    <div class="article">
+        <article-header article.bind="article"></article-header>
+        <div class="icon-article-items">
+            <icon-card repeat.for="item of article.items" model.bind="item"></icon-card>
+        </div>
+    </div>
+</template>

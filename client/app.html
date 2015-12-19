@@ -1,16 +1,21 @@
 <template>
+    <require from="converters/OrderSort"></require>
     <require from="components/section-link.html"></require>
+    <require from="components/resume-section.html"></require>
 
-    <div class="ui sidebar menu vertical left visible">
-        <div class="header item heading-section">
+    <div class="ui sidebar vertical menu left visible">
+        <div class="header item">
             <div>
                 <p>Ben<strong>Johnson</strong></p>
             </div>
             <div>
                 <p>Software Engineer</p>
-                <p>Software Enthusiast</p>
+                <p>Nay Enthusiast</p>
             </div>
         </div>
-        <section-link name="Test" icon="fa-graduation-cap" icon-color="red"></section-link>
+        <a repeat.for="section of sections | orderSort" href="#${section.name}">${section.name}</a>
+    </div>
+    <div class="pusher">
+        <resume-section repeat.for="section of sections | orderSort" section.bind="section"></resume-section>
     </div>
 </template>

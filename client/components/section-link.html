@@ -1,8 +1,8 @@
-<template bindable="name, icon, iconColor">
+<template bindable="name, icon, iconColor, size">
     <div>
-        <a>
-            <i class="fa ${icon}" css="color:${icon-color};"></i>
-            <span>${name}</span>
+        <a href="#${name}">
+            <i class="fa ${icon}" css="color: ${iconColor}; font-size: ${size}rem;"></i>
+            <span css="font-size: ${size}rem;">${name}</span>
         </a>
     </div>
 </template>

@@ -1,0 +1,11 @@
+<template bindable="article">
+    <require from="./article-header.html"></require>
+    <require from="./project-article.html"></require>
+
+    <div class="article">
+        <article-header article.bind="article"></article-header>
+        <div class="experience-article-items">
+            <project-article repeat.for="project of article.projects" article.bind="project"></project-article>
+        </div>
+    </div>
+</template>
