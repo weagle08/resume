@@ -43,7 +43,7 @@ gulp.task('build-css', function(){
 });
 
 gulp.task('move-config', function(){
-	return gulp.src(paths.config)
+	return gulp.src([paths.config, paths.root + 'favicon.ico'])
 		.pipe(changed(paths.output))
 		.pipe(gulp.dest(paths.output));
 });
@@ -55,7 +55,7 @@ gulp.task('move-json', function(){
 });
 
 gulp.task('move-images', function(){
-	return gulp.src(paths.images)
+	return gulp.src([paths.images])
 		.pipe(changed(paths.output))
 		.pipe(gulp.dest(paths.output + 'images'));
 });
