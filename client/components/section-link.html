@@ -1,6 +1,8 @@
 <template bindable="name, icon, iconColor, size">
-        <a href="#${name}">
+    <div class="section-link">
+        <a href="#${name}" class="section-link-link">
             <i class="fa fa-${icon}" css="color: ${iconColor}; font-size: ${size}rem;"></i>
-            <span css="font-size: ${size}rem;">${name}</span>
+            <span class="capitalize" css="font-size: ${size}rem;">${name}</span>
         </a>
+    </div>
 </template>

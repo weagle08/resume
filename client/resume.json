@@ -45,7 +45,7 @@
             {"display": "jspm", "icon": "jspm-logo.png"},
             {"display": "jQuery", "icon": "jquery-logo.png"},
             {"display": "SASS", "icon": "sass-logo.png"},
-            {"display": "Semantic-UI", "icon": "semantic-ui-logo.png"},
+            {"display": "Foundation", "icon": "foundation-logo.png"},
             {"display": ".NET", "icon": "dotnet-logo.png"},
             {"display": "WPF", "icon": "xaml-logo.png"},
             {"display": "EF", "icon": "entity-framework-logo.png"},
