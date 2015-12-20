@@ -1,7 +1,9 @@
-<template bindable="article">
-    <div class="article-header">
-        <span class="capitalize">${article.name}</span>
-        <span class="capitalize">${article.dates}</span>
-        <span class="capitalize">${article.role}</span>
+<template bindable="article, class">
+    <div class="${class}-header">
+        <span class="capitalize ${class}-title">${article.name}</span>
+        <span class="capitalize float-right ${class}-date">${article.dates}</span>
+        <div if.bind="article.role" class="${class}-role">
+            <span class="capitalize ${class}-role"><i class="fa fa-tag" style="padding-right: 0.5rem;"></i>${article.role}</span>
+        </div>
     </div>
 </template>

@@ -3,7 +3,7 @@
     <require from="./project-article.html"></require>
 
     <div class="article">
-        <article-header article.bind="article"></article-header>
+        <article-header article.bind="article" class="article"></article-header>
         <div>
             <project-article repeat.for="project of article.projects" article.bind="project"></project-article>
         </div>

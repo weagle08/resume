@@ -3,7 +3,7 @@
     <require from="./article-note.html"></require>
 
     <div class="article">
-        <article-header article.bind="article"></article-header>
+        <article-header article.bind="article" class="project"></article-header>
         <div>
             <article-note repeat.for="note of article.notes" note.bind="note"></article-note>
         </div>

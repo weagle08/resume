@@ -312,7 +312,7 @@
         },
         {
           "type": "project",
-          "name": "Simple Budget",
+          "name": "Simple Budget | deprecated",
           "role": "Lead Software Engineer",
           "notes": [
             "wp8 native application",

@@ -3,22 +3,22 @@
     <require from="components/section-link.html"></require>
     <require from="components/resume-section.html"></require>
 
-    <div class="off-canvas-wrapper">
-        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-            <div class="off-canvas position-left reveal-for-large" id="offCanvas" data-off-canvas>
+    <div class="off-canvas-wrapper" style="background-color: transparent;">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper style="background-color: transparent;">
+            <div class="off-canvas position-left reveal-for-large" id="offCanvas" data-off-canvas style="background-color: transparent;">
                 <div class="menu-header">
                     <div>
                         <span class="resume-target capitalize">${person.name}</span>
                     </div>
-                    <div>
+                    <div style="padding: 0;">
                         <span class="resume-statement">Software Engineer</span>
                     </div>
-                    <div>
+                    <div style="padding: 0;">
                         <span class="resume-statement">NodeJS Enthusiast</span>
                     </div>
                 </div>
-                <ul data-magellan>
-                    <li repeat.for="section of sections | orderSort" >
+                <ul>
+                    <li repeat.for="section of sections | orderSort" style="background-color: transparent;">
                         <section-link name="${section.name}" icon="${section.icon}" icon-color="${section.color}" size="1.5"></section-link>
                     </li>
                 </ul>
