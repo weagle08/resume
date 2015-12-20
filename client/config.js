@@ -25,11 +25,7 @@ System.config({
     "css": "github:systemjs/plugin-css@0.1.20",
     "font-awesome": "npm:font-awesome@4.5.0",
     "json": "github:systemjs/plugin-json@0.1.0",
-    "semantic-ui": "github:Semantic-Org/Semantic-UI@2.1.6",
-    "github:Semantic-Org/Semantic-UI@2.1.6": {
-      "css": "github:systemjs/plugin-css@0.1.20",
-      "jquery": "github:components/jquery@2.1.4"
-    },
+    "zurb/foundation-sites": "github:zurb/foundation-sites@6.0.6",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },

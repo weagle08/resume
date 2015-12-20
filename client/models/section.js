@@ -12,6 +12,8 @@ export class Section {
 
         this.name = section.name;
         this.order = section.order === undefined ? 9999 : section.order;
+        this.icon = section.icon;
+        this.color = section.color;
 
         for(let a of section.items) {
             let article = null;

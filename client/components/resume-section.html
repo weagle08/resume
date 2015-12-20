@@ -5,12 +5,12 @@
     <require from="./experience-article.html"></require>
     <require from="converters/TypeFilter"></require>
 
-    <div>
+    <section>
         <section-header section.bind="section"></section-header>
         <template repeat.for="article of section.articles">
             <icon-article if.bind="article | isType:'icon'" article.bind="article"></icon-article>
             <project-article if.bind="article | isType:'project'" article.bind="article"></project-article>
             <experience-article if.bind="article | isType:'experience'" article.bind="article"></experience-article>
         </template>
-    </div>
+    </section>
 </template>

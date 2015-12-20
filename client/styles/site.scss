@@ -1,4 +1,12 @@
 ﻿$menu-color: #000020;
+$primary-color: #f1f1f1;
+$sidebar-width: 114px;
+$nav-color: #333;
+
+body {
+  margin: 0;
+  font-family: Ubuntu;
+}
 
 .splash {
   text-align: center;
@@ -20,3 +28,138 @@
     margin-top: 3rem;
   }
 }
+
+.skill-card{
+  background-color:#fff;
+  max-height:9.375rem;
+  max-width:5rem;
+  display:inline-block;
+  box-shadow:0 0.125rem 0.125rem 0 rgba(0,0,0,.14),0 0.1875rem 0.0625rem -0.125rem rgba(0,0,0,.2),0 0.0625rem 0.3125rem 0 rgba(0,0,0,.12);
+  margin:0 0.625rem 0.625rem 0;
+
+  img {
+    max-height: 5rem;
+    max-width: 5rem;
+    top: 0;
+    left: 0;
+  }
+
+  .skill-card--image {
+    min-height: 5rem;
+  }
+
+  .skill-card--footer{
+    flex:1 0 auto;
+    padding-top:0.5rem;
+    padding-bottom:0.5rem;
+    text-align:center;
+    line-height:1.125rem;
+    font-size:1rem;
+    font-weight:400;
+    color:#616161;
+  }
+}
+
+@media (min-width:34em){
+  .skill-card,.skill-card img{
+    max-width:6.25rem;
+  }
+
+  .skill-card img{
+    max-height:6.25rem;
+  }
+
+  .skill-card .skill-card--image{
+    min-height:6.25rem;
+  }
+}
+
+@media (max-width:34em){
+  .skill-card,.skill-card img{
+    max-width:5rem;
+  }
+
+  .skill-card img{
+    max-height:5rem;
+  }
+
+  .skill-card .skill-card--image{
+    min-height:5rem;
+  }
+}
+
+.article {
+  padding-left: 1rem;
+}
+
+.section-header {
+  height: 7.5rem;
+  background-color: navy;
+  padding-top: 1rem;
+}
+
+.section-header {
+  h1 {
+    font-size: 4rem;
+    color: #ffffff;
+    padding-right: 1rem;
+  }
+}
+
+//.inner-wrap {
+//  width: auto;
+//}
+//
+//.move-right .inner-wrap {
+//  -ms-transform: none;
+//  -webkit-transform: none;
+//  -moz-transform: none;
+//  -ms-transform: none;
+//  -o-transform: none;
+//  transform: none;
+//  margin-left: $sidebar-width;
+//}
+//
+//
+//
+//.left-off-canvas-menu {
+//  -ms-transform: none;
+//  -webkit-transform: none;
+//  -moz-transform: none;
+//  -ms-transform: none;
+//  -o-transform: none;
+//  transform: none;
+//  position: fixed;
+//  width: 0;
+//  height: 100%;
+//}
+//
+//.move-right .left-off-canvas-menu {
+//  width: $sidebar-width;
+//}
+//
+//.move-right .exit-off-canvas {
+//  display: none;
+//}
+//
+//.left-off-canvas-toggle {
+//  display: none;
+//  margin-top: 1rem;
+//  margin-left: 1rem;
+//  font-size: 3rem;
+//  color: $nav-color;
+//  transition: all .25s ease-in-out;
+//
+//  &:focus {
+//    color: $nav-color;
+//  }
+//
+//  &:hover {
+//    color: lighten($nav-color, 35%);
+//    transition: all .25s ease-in-out;
+//  }
+//}
+//
+//.ad-block {
+//  margin-bottom: 2rem;
+//}

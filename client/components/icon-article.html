@@ -1,11 +1,21 @@
-<template bindable="article">
+<template bindable="article" containerless>
     <require from="./article-header.html"></require>
-    <require from="./icon-card.html"></require>
 
     <div class="article">
         <article-header article.bind="article"></article-header>
-        <div class="icon-article-items">
-            <icon-card repeat.for="item of article.items" model.bind="item"></icon-card>
+        <div class="row">
+            <template repeat.for="item of article.items">
+                <div>
+                    <div class="skill-card">
+                        <div class="skill-card--image">
+                            <img src="${'images/' + item.icon}" alt="${item.display}"/>
+                        </div>
+                        <div class="skill-card--footer">
+                            <div>${item.display}</div>
+                        </div>
+                    </div>
+                </div>
+            </template>
         </div>
     </div>
 </template>

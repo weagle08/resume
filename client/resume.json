@@ -14,6 +14,8 @@
   "sections": [
     {
       "name": "skills",
+      "icon": "wrench",
+      "color": "#e600e5",
       "items": [
         {
           "name": "languages",
@@ -24,7 +26,7 @@
             {"display": "C++", "icon": "cpp-logo.png"},
             {"display": "C#", "icon": "csharp-logo.png"},
             {"display": "ES6", "icon": "es6-logo.png"},
-            {"display": "javascript", "icon": "javascript-logo.png"},
+            {"display": "Javascript", "icon": "javascript-logo.png"},
             {"display": "HTML5", "icon":"html5-logo.png"},
             {"display": "CSS3", "icon": "css3-logo.png"},
             {"display": "SQL", "icon": "sql-logo.png"},
@@ -46,7 +48,7 @@
             {"display": "Semantic-UI", "icon": "semantic-ui-logo.png"},
             {"display": ".NET", "icon": "dotnet-logo.png"},
             {"display": "WPF", "icon": "xaml-logo.png"},
-            {"display": "Entity Framework", "icon": "entity-framework-logo.png"},
+            {"display": "EF", "icon": "entity-framework-logo.png"},
             {"display": "MFC", "icon": "mfc-logo.png"},
             {"display": "GDAL", "icon": "gdal-logo.png"},
             {"display": "GSM", "icon": "cellular-logo.png"},
@@ -63,7 +65,7 @@
             {"display": "Windows", "icon": "windows-logo.png"},
             {"display": "OSX", "icon": "osx-logo.png"},
             {"display": "Linux", "icon": "linux-logo.png"},
-            {"display": "Visual Studio", "icon": "visualstudio-logo.png"},
+            {"display": "VisualStudio", "icon": "visualstudio-logo.png"},
             {"display": "Eclipse", "icon": "eclipse-logo.png"},
             {"display": "WebStorm", "icon": "webstorm-logo.png"},
             {"display": "Brackets", "icon": "brackets-logo.png"},
@@ -98,6 +100,8 @@
     },
     {
       "name":"experience",
+      "icon": "industry",
+      "color": "#e60000",
       "items":[
         {
           "type": "experience",
@@ -258,6 +262,8 @@
     },
     {
       "name": "projects",
+      "icon": "laptop",
+      "color": "#0052cc",
       "items":[
         {
           "type": "project",
@@ -318,6 +324,8 @@
     },
     {
       "name": "education",
+      "icon": "graduation-cap",
+      "color": "#00cc00",
       "items": [
         {
           "type": "project",

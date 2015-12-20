@@ -3,19 +3,21 @@
     <require from="components/section-link.html"></require>
     <require from="components/resume-section.html"></require>
 
-    <div class="ui sidebar vertical menu left visible">
-        <div class="header item">
-            <div>
-                <p>Ben<strong>Johnson</strong></p>
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+            <div class="off-canvas position-left reveal-for-large" id="offCanvas" data-off-canvas>
+                <ul data-magellan>
+                    <li repeat.for="section of sections | orderSort" >
+                        <section-link name="${section.name}" icon="${section.icon}" icon-color="${section.color}" size="1.5"></section-link>
+                    </li>
+                </ul>
             </div>
-            <div>
-                <p>Software Engineer</p>
-                <p>Nay Enthusiast</p>
+            <div class="off-canvas-content" data-off-canvas-content>
+                <!--page content here-->
+                <div>
+                    <resume-section repeat.for="section of sections | orderSort" section.bind="section"></resume-section>
+                </div>
             </div>
         </div>
-        <a repeat.for="section of sections | orderSort" href="#${section.name}">${section.name}</a>
-    </div>
-    <div class="pusher">
-        <resume-section repeat.for="section of sections | orderSort" section.bind="section"></resume-section>
     </div>
 </template>

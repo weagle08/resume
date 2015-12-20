@@ -10,6 +10,7 @@ module.exports = {
     html: appRoot + '**/*.html',
     json: appRoot + '**/*.json',
     images: appRoot + 'images/**/*',
+    lib: appRoot + 'lib/**/*',
     css: appRoot + '**/*.css',
     sass: appRoot + '**/*.scss',
     jspm: appRoot + 'jspm_packages/**/*',

@@ -14,7 +14,7 @@ var assign = Object.assign || require('object.assign');
 var notify = require('gulp-notify');
 
 gulp.task('build-system', function(){
-	return gulp.src([paths.source, '!' + paths.jspm, '!' + paths.config])
+	return gulp.src([paths.source, '!' + paths.jspm, '!' + paths.config, '!' + paths.lib])
 		.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
 		.pipe(changed(paths.output, {extension: '.js'}))
 		.pipe(sourcemaps.init({loadMaps: true}))
@@ -24,20 +24,20 @@ gulp.task('build-system', function(){
 });
 
 gulp.task('build-html', function(){
-	return gulp.src([paths.html, '!' + paths.jspm])
+	return gulp.src([paths.html, '!' + paths.jspm, '!' + paths.lib])
 		.pipe(changed(paths.output, {extension: '.html'}))
 		.pipe(gulp.dest(paths.output));
 });
 
 gulp.task('build-sass', function(){
-	return gulp.src([paths.sass, '!' + paths.jspm])
+	return gulp.src([paths.sass, '!' + paths.jspm, '!' + paths.lib])
 			.pipe(changed(paths.output, {extension: '.css'}))
 			.pipe(sass())
 			.pipe(gulp.dest(paths.output))
 });
 
 gulp.task('build-css', function(){
-	return gulp.src([paths.css, '!' + paths.jspm])
+	return gulp.src([paths.css, '!' + paths.jspm, '!' + paths.lib])
 			.pipe(changed(paths.output, {extension: '.css'}))
 			.pipe(gulp.dest(paths.output));
 });
@@ -60,6 +60,12 @@ gulp.task('move-images', function(){
 		.pipe(gulp.dest(paths.output + 'images'));
 });
 
+gulp.task('move-lib', function(){
+	return gulp.src(paths.lib)
+		.pipe(changed(paths.output))
+		.pipe(gulp.dest(paths.output + 'lib'));
+});
+
 gulp.task('move-jspm', function(){
 	return gulp.src(paths.jspm)
 			.pipe(changed(paths.jspmOut))
@@ -69,7 +75,7 @@ gulp.task('move-jspm', function(){
 gulp.task('build', function(callback){
 	return runSequence(
 		'clean',
-		['build-system', 'build-html', 'build-sass', 'build-css', 'move-jspm', 'move-config', 'move-images', 'move-json'],
+		['build-system', 'build-html', 'build-sass', 'build-css', 'move-jspm', 'move-config', 'move-images', 'move-json', 'move-lib'],
 		callback
 	);
 });
