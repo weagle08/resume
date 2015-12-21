@@ -48,5 +48,9 @@
     "require-dir": "^0.3.0",
     "run-sequence": "^1.1.5",
     "vinyl-paths": "^2.1.0"
+  },
+  "dependencies": {
+    "compression": "^1.6.0",
+    "express": "^4.13.3"
   }
 }
