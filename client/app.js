@@ -6,7 +6,7 @@ import {Section} from 'models/Section.js'
 
 export class App {
     constructor() {
-        this.person = resume.info;
+        this.info = resume.info;
         this._loadResume().then(function(result){
             this.sections = result.sections;
         }.bind(this));
