@@ -1,0 +1,199 @@
+{
+  "metadata": {
+    "type": "software"
+  },
+  "info": {
+    "name": "Ben Johnson",
+    "email": "weagle08@gmail.com",
+    "phone": "334-740-6353"
+  },
+  "experience": [
+    {
+      "company": "SAIC",
+      "location": "Huntsville, AL",
+      "dates": "October 2012-Present",
+      "projects": [
+        {
+          "name": "XWALK",
+          "date": "April 2016 - Present",
+          "role": "Software Team Lead",
+          "description": "XWALK is an obsolescence process tool for Army PM-AGSE. It allows the AGSE users to detect and suggest replacements for parts in military ground support equipment system. XWALK has integrated CAC authentication via OAuth 2.0 server, and enforces user roles within the application.",
+          "skills": {
+            "languages": ["javascript", "html", "css", "c#", "sass"],
+            "technologies": ["nodejs", ".net", "aurelia", "gulp", "jspm"],
+            "tools": ["windows", "linux", "osx", "webstorm", "git", "tfs"],
+            "data": ["mongodb"],
+            "process": ["agile"]
+          },
+          "work": [
+            "lead team of 3 software engineers and an integrated tester to complete project requirements within budget and schedule constraints",
+            "derive software requirements from system level requirements which are then broken into developer task using an Agile like approach",
+            "provide monthly status updates on project status such as requirements progress, SLOC, identify any risk such as schedule concerns",
+            "conduct software engineering working groups for interfacing with customer to ensure the software meets expectations of the customer",
+            "provide mentoring and guidance as a senior developer to more junior developers on the team",
+            "lay out software architecture and select toolset to be used"
+          ]
+        },
+        {
+          "name": "ADEC Central Database (ACD) v2.0",
+          "date": "October 2015 - Present",
+          "role": "Software Team Lead",
+          "description": "",
+          "skills": {
+            "languages": [],
+            "technologies": [],
+            "tools": [],
+            "data": [],
+            "processes": []
+          },
+          "work": []
+        },
+        {
+          "name": "Aviation Data Exploitation Capability (ADEC) - Hazards and Events",
+          "date": "February 2016 - May 2016",
+          "role": "Software Team Lead",
+          "description": "",
+          "skills": {
+            "languages": [],
+            "technologies": [],
+            "tools": [],
+            "data": [],
+            "processes": []
+          },
+          "work": []
+        },
+        {
+          "name": "ADEC Central Database (ACD) v1.0",
+          "date": "March 2015 - September 2015",
+          "role": "Senior Software Developer",
+          "description": "",
+          "skills": {
+            "languages": [],
+            "technologies": [],
+            "tools": [],
+            "data": [],
+            "processes": []
+          },
+          "work": []
+        },
+        {
+          "name": "Aviation Data Exploitation Capability (ADEC)",
+          "date": "December 2014 - February 2015",
+          "role": "Software Team Lead",
+          "description": "",
+          "skills": {
+            "languages": [],
+            "technologies": [],
+            "tools": [],
+            "data": [],
+            "processes": []
+          },
+          "work": []
+        },
+        {
+          "name": "Aviation Data Exploitation Capability (ADEC) - Analysis and Visualization System (AVS)",
+          "date": "October 2012 - November 2014",
+          "role": "Senior Software Developer",
+          "description": "",
+          "skills": {
+            "languages": [],
+            "technologies": [],
+            "tools": [],
+            "data": [],
+            "processes": []
+          },
+          "work": []
+        }
+      ]
+    },
+    {
+      "company": "HDI Solutions",
+      "location": "Auburn, AL",
+      "dates": "November 2011 - October 2012",
+      "projects": [
+
+      ]
+    },
+    {
+      "company": "Harris Corporation",
+      "location": "Melbourne, FL",
+      "dates": "June 2008 - November 2011",
+      "projects": [
+
+      ]
+    },
+    {
+      "company": "Power South Energy Cooperative",
+      "dates": "August 2003 - August 2007 (20 months of total full time experience)",
+      "projects": [
+
+      ]
+    }
+  ],
+  "projects": [
+
+  ],
+  "education": [
+    {
+      "school": "Auburn University",
+      "location": "Auburn, AL",
+      "dates": "2002 - 2008",
+      "degree": "Electrical Computer Engineering"
+    }
+  ],
+  "technologies": [
+    "NodeJS",
+    "Aurelia",
+    "AngularJS",
+    "gulp",
+    "jspm",
+    "npm",
+    "SASS",
+    "jQuery",
+    ".NET",
+    "WPF",
+    "Entity Framework",
+    "MFC",
+    "UML",
+    "GDAL",
+    "GSM",
+    "REST",
+    "ASP.NET MVC",
+    "XNA",
+    "OpenVPN"
+  ],
+  "languages": [
+    "C",
+    "C++",
+    "C#",
+    "JavaScript",
+    "HTML",
+    "CSS3",
+    "SQL",
+    "XML"
+  ],
+  "tools": [
+    "Windows",
+    "Linux",
+    "OSX",
+    "Visual Studio",
+    "Eclipse",
+    "WebStorm",
+    "Brackets",
+    "GIT",
+    "SVN",
+    "TFS",
+    "GeoServer"
+  ],
+  "data": [
+    "MS SQL",
+    "MongoDB",
+    "SQLite"
+  ],
+  "processes": [
+    "Agile",
+    "Waterfall",
+    "RUP",
+    "CMMI-3"
+  ]
+}
