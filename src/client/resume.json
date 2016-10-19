@@ -17,39 +17,40 @@
           "name": "XWALK",
           "date": "April 2016 - Present",
           "role": "Software Team Lead",
-          "description": "XWALK is an obsolescence process tool for Army PM-AGSE. It allows the AGSE users to detect and suggest replacements for parts in military ground support equipment system. XWALK has integrated CAC authentication via OAuth 2.0 server, and enforces user roles within the application.",
+          "description": "XWALK is an obsolescence management tool for Army PM AGSE. It allows the AGSE users to identify and resolve parts which are nearing end of life Army systems. XWALK has integrated CAC authentication via an OAuth 2.0 server and user role management.",
           "skills": {
             "languages": ["javascript", "html", "css", "c#", "sass"],
-            "technologies": ["nodejs", ".net", "aurelia", "gulp", "jspm"],
-            "tools": ["windows", "linux", "osx", "webstorm", "git", "tfs"],
+            "technologies": ["nodejs", "aurelia", "gulp", "jspm", "npm", "jquery", "rest", "tls"],
+            "tools": ["windows", "linux", "webstorm", "git", "tfs"],
             "data": ["mongodb"],
             "process": ["agile"]
           },
           "work": [
             "lead team of 3 software engineers and an integrated tester to complete project requirements within budget and schedule constraints",
-            "derive software requirements from system level requirements which are then broken into developer task using an Agile like approach",
-            "provide monthly status updates on project status such as requirements progress, SLOC, identify any risk such as schedule concerns",
+            "derive software requirements from system level requirements which are then broken into developer task and worked using an Agile like approach",
+            "provide monthly status updates on project status such as requirements progress, SLOC, identify any risk and schedule concerns",
             "conduct software engineering working groups for interfacing with customer to ensure the software meets expectations of the customer",
             "provide mentoring and guidance as a senior developer to more junior developers on the team",
-            "lay out software architecture and select toolset to be used"
+            "lay out software architecture and select toolset to be used",
+	    "assist in developing code base"
           ]
         },
         {
           "name": "ADEC Central Database (ACD) v2.0",
-          "date": "October 2015 - Present",
+          "date": "October 2015 - July 2016",
           "role": "Software Team Lead",
-          "description": "",
+          "description": "ACD is a business intelligence reporting tool. ACD collects batallion level data from multiple locations and produces brigade and Army level reports on mission statistics.",
           "skills": {
-            "languages": [],
-            "technologies": [],
-            "tools": [],
-            "data": [],
-            "processes": []
+            "languages": [".net", "javascript", "css", "sass", "html"],
+            "technologies": ["nodejs", "aurelia", "gulp", "jspm", "npm", "jquery", "rest", "tls", ".net"],
+            "tools": ["windows", "webstorm", "visualstudio", "git", "tfs", "qlik"],
+            "data": ["mongodb", "mssql"],
+            "processes": ["agile"]
           },
           "work": []
         },
         {
-          "name": "Aviation Data Exploitation Capability (ADEC) - Hazards and Events",
+          "name": "Aviation Data Exploitation Capability (ADEC) v2.0 - Hazards and Events",
           "date": "February 2016 - May 2016",
           "role": "Software Team Lead",
           "description": "",
@@ -77,7 +78,7 @@
           "work": []
         },
         {
-          "name": "Aviation Data Exploitation Capability (ADEC)",
+          "name": "Aviation Data Exploitation Capability (ADEC) - Refactor Study",
           "date": "December 2014 - February 2015",
           "role": "Software Team Lead",
           "description": "",
@@ -91,7 +92,7 @@
           "work": []
         },
         {
-          "name": "Aviation Data Exploitation Capability (ADEC) - Analysis and Visualization System (AVS)",
+          "name": "Aviation Data Exploitation Capability (ADEC) v1.0 - Analysis and Visualization System (AVS)",
           "date": "October 2012 - November 2014",
           "role": "Senior Software Developer",
           "description": "",
