@@ -11,6 +11,13 @@ export class App {
 
         this.router.configure((config) => {
             config.title = "Ben Johnson";
+
+            config.map([
+                {route: ['', 'info'], name: 'info', moduleId: 'pages/info/info', nav: true},
+                {route: ['experience'], name: 'experience', moduleId: 'pages/experience/experience', nav: true}
+            ]);
+
+            config.mapUnknownRoutes('pages/info/info');
         });
     }
 }

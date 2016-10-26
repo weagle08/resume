@@ -197,52 +197,52 @@
 
 /* Image */
 
-	.image {
-		display: inline-block;
-		border: 0;
-
-		img {
-			display: block;
-			width: 100%;
-		}
-
-		&.avatar48 {
-			width: 48px;
-			height: 48px;
-			background: #f00;
-
-			img {
-				width: 48px;
-				height: 48px;
-			}
-		}
-
-		&.fit {
-			display: block;
-			width: 100%;
-		}
-
-		&.featured {
-			display: block;
-			width: 100%;
-			margin: 0 0 2em 0;
-		}
-
-		&.left {
-			float: left;
-			margin: 0 2em 2em 0;
-		}
-
-		&.centered {
-			display: block;
-			margin: 0 0 2em 0;
-
-			img {
-				margin: 0 auto;
-				width: auto;
-			}
-		}
-	}
+	//.image {
+	//	display: inline-block;
+	//	border: 0;
+    //
+	//	img {
+	//		display: block;
+	//		width: 100%;
+	//	}
+    //
+	//	//&.avatar48 {
+	//	//	width: 48px;
+	//	//	height: 48px;
+	//	//	background: #f00;
+     //   //
+	//	//	img {
+	//	//		width: 48px;
+	//	//		height: 48px;
+	//	//	}
+	//	//}
+    //
+	//	&.fit {
+	//		display: block;
+	//		width: 100%;
+	//	}
+    //
+	//	&.featured {
+	//		display: block;
+	//		width: 100%;
+	//		margin: 0 0 2em 0;
+	//	}
+    //
+	//	&.left {
+	//		float: left;
+	//		margin: 0 2em 2em 0;
+	//	}
+    //
+	//	&.centered {
+	//		display: block;
+	//		margin: 0 0 2em 0;
+    //
+	//		img {
+	//			margin: 0 auto;
+	//			width: auto;
+	//		}
+	//	}
+	//}
 
 /* List */
 

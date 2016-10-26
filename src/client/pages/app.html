@@ -1,7 +1,8 @@
 <template>
-    <require from="components/header/page-header"></require>
-    <require from="components/content/page-content"></require>
+    <require from="components/page-menu/page-menu"></require>
 
-    <page-header></page-header>
-    <page-content></page-content>
+    <page-menu></page-menu>
+    <div>
+        <router-view></router-view>
+    </div>
 </template>
