@@ -22,15 +22,24 @@ export class App {
         });
     }
 
+    _navigateToRoute(name) {
+        this.router.navigateToRoute(name);
+    }
+
     _onNavClick(event) {
+        let clicked = null;
         for(let e of event.path) {
             if(e.localName === 'li') {
-                currentActive = e;
+                clicked = e;
                 e.className = 'active';
             }
 
             if(e.localName === 'ul') {
-
+                for(let c of e.children) {
+                    if(c != clicked) {
+                        c.className = '';
+                    }
+                }
             }
         }
     }

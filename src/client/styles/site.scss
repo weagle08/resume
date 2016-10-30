@@ -24,9 +24,11 @@ a {
   vertical-align: middle;
 
   li{
+    color: $color-default;
     height: 2.5em;
     padding: 0 1em;
     line-height: 2.5em;
+    cursor: pointer;
   }
 
   span {
@@ -36,8 +38,10 @@ a {
     height: 100%;
   }
 
-  a{
+  a {
     color: $color-default;
+    height: 100%;
+    width: 100%;
   }
 
   a:hover {
@@ -56,18 +60,41 @@ a {
 .navbar {
   margin: 0;
   padding: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 20%;
+  //min-width: 20%;
+  //max-width: 23%;
 }
 
 .navbar-default {
   background-color: $color-primary;
 }
 
+.navbar-header {
+  padding: 1em;
+  display: inline-block;
+
+  .navbar-header-title {
+    display: inline-block;
+    color: $color-default;
+
+    h1 {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
 @media screen and (min-width: 64em) {
   .navbar {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
+
+  }
+
+  .page-content {
+    margin-left: 20%;
   }
 }
 
@@ -75,8 +102,8 @@ a {
   .navbar {
     display: none;
   }
-}
 
-@media screen and (min-width: 64em) {
-
+  .page-content {
+    margin-left: 0;
+  }
 }
