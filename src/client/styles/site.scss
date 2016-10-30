@@ -1,28 +1,64 @@
+@import "libs/variables";
+
+body {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.42857143;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 .avatar {
   height: 4rem;
   width: 4rem;
 }
 
-.logo {
-  position: relative;
+.nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
-  img {
-    display: inline-block;
-    position: relative;
+  a{
+    color: $color-default;
+  }
+
+  a:hover, a:focus {
+    color: $color-secondary;
+  }
+}
+
+.active {
+  background-color: darken($color-primary, 10%);
+}
+
+.navbar {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-default {
+  background-color: $color-primary;
+}
+
+@media screen and (min-width: 64em) {
+  .navbar {
+    position: absolute;
     top: 0;
+    bottom: 0;
     left: 0;
   }
+}
 
-  h1 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    position: relative;
-    line-height: 1em;
+@media screen and (max-width: 64em) {
+  .navbar {
+    display: none;
   }
+}
 
-  p {
-    display: block;
-    position: relative;
-    line-height: 1em;
-  }
+@media screen and (min-width: 64em) {
+
 }

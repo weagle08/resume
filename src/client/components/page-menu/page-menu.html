@@ -1,82 +1,11 @@
 <template>
-    <!--<div id="header">-->
+    <require from="components/page-menu/page-menu.css!"></require>
 
-        <!--<div class="top">-->
-
-            <!--&lt;!&ndash; Logo &ndash;&gt;-->
-            <!--<div id="logo">-->
-                <!--<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>-->
-                <!--<h1 id="title">Ben Johnson</h1>-->
-                <!--<p>Software Engineer</p>-->
-            <!--</div>-->
-
-            <!--&lt;!&ndash; Nav &ndash;&gt;-->
-            <!--<nav id="nav">-->
-                <!--&lt;!&ndash;-->
-
-                    <!--Prologue's nav expects links in one of two formats:-->
-
-                    <!--1. Hash link (scrolls to a different section within the page)-->
-
-                       <!--<li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>-->
-
-                    <!--2. Standard link (sends the user to another page/site)-->
-
-                       <!--<li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>-->
-
-                <!--&ndash;&gt;-->
-                <!--<ul>-->
-                    <!--<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>-->
-                    <!--<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>-->
-                    <!--<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>-->
-                    <!--<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>-->
-                <!--</ul>-->
-            <!--</nav>-->
-
-        <!--</div>-->
-
-        <!--<div class="bottom">-->
-
-            <!--&lt;!&ndash; Social Icons &ndash;&gt;-->
-            <!--<ul class="icons">-->
-                <!--<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>-->
-                <!--<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>-->
-                <!--<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>-->
-                <!--<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>-->
-                <!--<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>-->
-            <!--</ul>-->
-
-        <!--</div>-->
-
-    <!--</div>-->
-
-
-    <!--<div id="header">-->
-        <!--<div class="top">-->
-            <!--<ul class="menu vertical">-->
-                <!--<li><a href="#/info">Info</a></li>-->
-                <!--<li><a href="#/experience">Experience</a></li>-->
-            <!--</ul>-->
-        <!--</div>-->
-    <!--</div>-->
-
-    <div class="off-canvas-wrapper">
-        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-            <div class="off-canvas position-left reveal-for-medium" id="pageMenu" data-off-canvas data-position="left">
-                <div class="row column">
-                    <br>
-                    <div class="logo">
-                        <img class="thumbnail avatar" src="images/avatar.jpg" alt=""/>
-                        <h1>Ben Johnson</h1>
-                        <p>Software Engineer</p>
-                    </div>
-                    <!--<div class="logo">-->
-                        <!--<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>-->
-                        <!--<h1 class="">Ben Johnson</h1>-->
-                        <!--<p>Software Engineer</p>-->
-                    <!--</div>-->
-                </div>
-            </div>
-        </div>
+    <div class="menu-content">
+        <ul class="menu-list">
+            <li class="menu-item"><a href="#/info"><i class="fa fa-user"></i><span>Info</span></a></li>
+            <li><a href="#/experience" class="menu-item"><i class="fa fa-th-list"></i><span>Experience</span></a></li>
+            <li><a href="#/contact" class="menu-item"><i class="fa fa-envelope"></i><span>Contact</span></a></li>
+        </ul>
     </div>
 </template>

@@ -3,6 +3,7 @@
  */
 import {inject} from 'aurelia-framework';
 import {Router} from 'aurelia-router';
+import 'libs/foundation/js/vendor/foundation.min';
 
 @inject(Router)
 export class App {
@@ -14,10 +15,13 @@ export class App {
 
             config.map([
                 {route: ['', 'info'], name: 'info', moduleId: 'pages/info/info', nav: true},
-                {route: ['experience'], name: 'experience', moduleId: 'pages/experience/experience', nav: true}
+                {route: ['experience'], name: 'experience', moduleId: 'pages/experience/experience', nav: true},
+                {route: ['contact'], name: 'contact', moduleId: 'pages/contact/contact', nav: true}
             ]);
 
             config.mapUnknownRoutes('pages/info/info');
         });
+
+        $(document).foundation();
     }
 }
