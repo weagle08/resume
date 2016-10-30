@@ -3,7 +3,6 @@
  */
 import {inject} from 'aurelia-framework';
 import {Router} from 'aurelia-router';
-import 'libs/foundation/js/vendor/foundation.min';
 
 @inject(Router)
 export class App {
@@ -21,7 +20,18 @@ export class App {
 
             config.mapUnknownRoutes('pages/info/info');
         });
+    }
 
-        $(document).foundation();
+    _onNavClick(event) {
+        for(let e of event.path) {
+            if(e.localName === 'li') {
+                currentActive = e;
+                e.className = 'active';
+            }
+
+            if(e.localName === 'ul') {
+
+            }
+        }
     }
 }

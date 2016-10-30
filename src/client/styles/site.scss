@@ -21,13 +21,31 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
+  vertical-align: middle;
+
+  li{
+    height: 2.5em;
+    padding: 0 1em;
+    line-height: 2.5em;
+  }
+
+  span {
+    font-size: 1.3em;
+    font-weight: 500;
+    padding-left: 1em;
+    height: 100%;
+  }
 
   a{
     color: $color-default;
   }
 
-  a:hover, a:focus {
+  a:hover {
     color: $color-secondary;
+  }
+
+  a:active, a:focus {
+    color: $color-default;
   }
 }
 
