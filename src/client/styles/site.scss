@@ -88,9 +88,18 @@ a {
   }
 }
 
-@media screen and (min-width: 64em) {
-  .navbar {
+.title-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-color: $color-menu;
+}
 
+@media screen and (min-width: 64em) {
+  .title-bar {
+    display: none;
   }
 
   .page-content {
