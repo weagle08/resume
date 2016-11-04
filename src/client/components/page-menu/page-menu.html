@@ -1,12 +1,7 @@
 <template>
     <require from="components/page-menu/page-menu.css!"></require>
 
-    <div class="title-bar">
-        <button type="button"><i class="fa fa-bars"></i></button>
-        <div class="title-bar-title">Ben Johnson</div>
-    </div>
-
-    <nav class="navbar navbar-default">
+    <nav class="navbar">
         <div class="navbar-header">
             <img class="avatar" src="images/avatar.jpg"/>
             <div class="navbar-header-title">
@@ -14,10 +9,14 @@
                 <span>Software Engineer</span>
             </div>
         </div>
-        <ul id="navMenu" class="nav" click.delegate="_onNavClick($event)">
-            <li class="active" click.trigger="_navigateToRoute('info')"><i class="fa fa-user"></i><span>Info</span></li>
-            <li click.trigger="_navigateToRoute('experience')"><i class="fa fa-th-list"></i><span>Experience</span></li>
-            <li click.trigger="_navigateToRoute('contact')"><i class="fa fa-envelope"></i><span>Contact</span></li>
+        <div class="menu-sm">
+            <button click.trigger="_onToggleMenuClick()"><i class="fa fa-bars"></i></button>
+            <span class="menu-sm-title">Ben Johnson</span>
+        </div>
+        <ul class="${navClass}">
+            <li><a href="#info"><i class="fa fa-user"></i><span>Info</span></a></li>
+            <li><a href="#experience"><i class="fa fa-th-list"></i><span>Experience</span></a></li>
+            <li><a href="#contact"><i class="fa fa-envelope"></i><span>Contact</span></a></li>
         </ul>
     </nav>
 </template>

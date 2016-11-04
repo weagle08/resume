@@ -140,7 +140,7 @@
       "projects": [
         {
           "name": "Electronic Case Management System (eCASE) v2.0 (prototype)",
-          "date": "August 2012 - November 2012",
+          "date": "August 2012 - October 2012",
           "role": "Lead Designer/Developer",
           "description": "This was a prototype re-write of the current eCASE management system. It was intended to be a replacement of the current system with new features and updated user interface. The main goals of this version over the previous version were to enable the application to run with no internet connection, add features which were hard to implement in the current baseline, and improve user experience. The prototype was designed as a desktop application, but with service oriented architecture so that a web interface could be added.",
           "skills": {

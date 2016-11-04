@@ -8,6 +8,8 @@ body {
   margin: 0;
 }
 
-a {
-  text-decoration: none;
+.sections {
+  >section {
+    height: 1024px;
+  }
 }

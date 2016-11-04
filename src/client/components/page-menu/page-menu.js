@@ -8,27 +8,16 @@ import {inject} from 'aurelia-framework';
 export class PageMenu {
     constructor(router){
         this.router = router;
+        this.showMenu = true;
+
+        this.navClass = 'nav';
     }
 
-    _navigateToRoute(name) {
-        this.router.navigateToRoute(name);
-    }
-
-    _onNavClick(event) {
-        let clicked = null;
-        for(let e of event.path) {
-            if(e.localName === 'li') {
-                clicked = e;
-                e.className = 'active';
-            }
-
-            if(e.localName === 'ul') {
-                for(let c of e.children) {
-                    if(c != clicked) {
-                        c.className = '';
-                    }
-                }
-            }
+    _onToggleMenuClick() {
+        if(this.navClass == 'nav') {
+            this.navClass += ' expand';
+        } else {
+            this.navClass = 'nav';
         }
     }
 }
