@@ -15,8 +15,6 @@ let config = {
                 '[*.js]',
                 '[components/**/*.js]',
                 '[pages/**/*.js]',
-                '[services/**/*.js]',
-                '[utils/**/*.js]',
                 '[**/*.html!text]',
                 '[**/*.css!text]'
             ],
@@ -41,7 +39,6 @@ let config = {
                 "aurelia-router",
                 "css",
                 "moment",
-                "xlsx",
                 "aurelia-templating-resources",
                 "aurelia-logging-console",
                 "aurelia-templating-binding",

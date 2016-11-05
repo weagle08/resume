@@ -26,19 +26,17 @@
     top: 0;
     bottom: 0;
     left: 0;
-    width: 20%;
-    max-width: 286px;
-    min-width: 247px;
+    width: 265px;
     background-color: $color-primary;
     color: $color-default;
   }
 
   .navbar-header {
-    padding: 0.5em;
+    padding: 1em;
     white-space: nowrap;
     overflow: hidden;
     background-color: $color-secondary;
-    height: 80px;
+    height: 5em;
 
     .avatar {
       height: 4rem;
@@ -89,7 +87,7 @@
   }
 
   .page-content {
-    margin-left: 20%;
+    margin-left: 265px;
   }
 }
 
