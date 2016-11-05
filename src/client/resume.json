@@ -2,11 +2,12 @@
   "metadata": {
     "type": "software"
   },
-  "info": {
+  "about": {
     "name": "Ben Johnson",
     "email": "weagle08@gmail.com",
     "phone": "334-740-6353",
-    "clearance": "DoD Secret"
+    "clearance": "DoD Secret",
+    "description": "Husband, father, and software enthusiast. I enjoy a good software challenge, and find being a software developer fun and engaging. I like to equate writing software to solving a sudoku puzzle, sometimes you get an easy puzzle and other times you get a puzzle that takes more than one attempt to solve correctly."
   },
   "experience": [
     {

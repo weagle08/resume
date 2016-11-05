@@ -20,4 +20,8 @@ export class PageMenu {
             this.navClass = 'nav';
         }
     }
+
+    _onMenuItemClick() {
+        console.log('clicked');
+    }
 }

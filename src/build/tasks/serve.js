@@ -23,6 +23,21 @@ gulp.task('serve', ['build'], function(done) {
     }, done);
 });
 
+gulp.task('serve-only', [], function(done) {
+    browserSync({
+        online: false,
+        open: false,
+        port: 8080,
+        server: {
+            baseDir: ['./www'],
+            middleware: function(req, res, next) {
+                res.setHeader('Access-Control-Allow-Origin', '*');
+                next();
+            }
+        }
+    }, done);
+});
+
 gulp.task('serve-proxy', ['build'], function(done) {
     browserSync({
         online: false,
