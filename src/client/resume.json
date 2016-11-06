@@ -21,7 +21,7 @@
           "role": "Software Team Lead",
           "description": "XWALK is an obsolescence management tool for Army PM AGSE. It allows the AGSE users to identify and resolve issues with parts which are nearing end of life within Army systems. XWALK is a public facing web application using TLS and has integrated CAC authentication via an OAuth 2.0 server and user role management. XWALK employs NodeJS as the primary server-side technology with a MongDB database. The frontend client is a single page application employing the Aurelia framework.",
           "skills": {
-            "languages": ["javascript", "html", "css", "c#", "sass"],
+            "languages": ["javascript", "html", "css", "csharp", "sass"],
             "technologies": ["nodejs", "aurelia", "gulp", "jspm", "npm", "jquery", "rest", "tls"],
             "tools": ["windows", "linux", "webstorm", "git", "jira"],
             "data": ["mongodb"],
@@ -68,7 +68,7 @@
           "role": "Software Team Lead",
           "description": "H&E was a new capability for the ADEC software. H&E allowed the solider to report any safety concerns he or she may have encountered on a mission. Reporting of safety concerns could be anonymous if desired. These safety issues after being collected are then combined across all battalions at ACD where they are then analyzed and the results pushed back to battalions where they are then used to assist in determining possible potential outcomes for future missions based on mission parameters. H&E was written in C# .NET and used WPF for implementing the visual component.",
           "skills": {
-            "languages": ["c#", "xaml"],
+            "languages": ["csharp", "xaml"],
             "technologies": [".net", "wpf"],
             "tools": ["windows", "visualstudio", "git", "tfs"],
             "data": ["mssql"],
@@ -106,7 +106,7 @@
           "role": "Software Team Lead",
           "description": "This was a small prototype to demonstrate refactoring the ADEC software. There were several problems in the design of the ADEC software that were made apparent as the software entered field quality testing and user test. The program managers chose me to lead a small 3 month effort to demonstrate implementing better software design for the system. The refactor demonstrated how concepts like dependency injection could lead to improved software through decoupling and easier testing. It also demonstrated how implementing patterns such as repository patterns between services and the database as well as model view view model on the client could lead to more maintainable software. It also demonstrated using REST services versus WCF soap services. This prototype also showed improved database interaction through the use of ORM tools like entity framework. The prototype was a success in that most patterns and tools demonstrated were integrated as permitted into the ADEC baseline.",
           "skills": {
-            "languages": ["c#", "xaml"],
+            "languages": ["csharp", "xaml"],
             "technologies": ["ef", "web-api", "rest"],
             "tools": ["windows", "visual-studio", "tfs"],
             "data": ["mssql"],
@@ -145,7 +145,7 @@
           "role": "Lead Designer/Developer",
           "description": "This was a prototype re-write of the current eCASE management system. It was intended to be a replacement of the current system with new features and updated user interface. The main goals of this version over the previous version were to enable the application to run with no internet connection, add features which were hard to implement in the current baseline, and improve user experience. The prototype was designed as a desktop application, but with service oriented architecture so that a web interface could be added.",
           "skills": {
-            "languages": ["c#", "xaml"],
+            "languages": ["csharp", "xaml"],
             "technologies": [".net", "rest", "wpf"],
             "tools": ["windows", "visual-studio", "svn", "jira"],
             "data": [],
@@ -159,8 +159,8 @@
           "role": "Software Developer",
           "description": "eCASE is an electronic case management system for police departments. At the time it managed police reporting for Lee County Sherrifs Office in Lee County, AL. It was build on ASP.NET 2.0 technology and employed MS SQL Server as the database.",
           "skills": {
-            "languages": ["c#"],
-            "technologies": ["asp.net"],
+            "languages": ["csharp"],
+            "technologies": ["aspnetmvc"],
             "tools": ["visual-studio", "vss"],
             "data": ["mssql"],
             "processes": ["agile"]
@@ -173,7 +173,7 @@
           "role": "Software Developer",
           "description": "This was a data entry application/process for the state of Texas traffic citation system. It allowed agencies that did not yet have digital systems for issuing traffic citations to send their scanned paper copies through this system to be digitized. It was written in several different languages, but backend processes were written in C# .net 2.0.",
           "skills": {
-            "languages": ["c#"],
+            "languages": ["csharp"],
             "technologies": [".net"],
             "tools": ["visual-studio", "vss"],
             "data": ["mssql"],

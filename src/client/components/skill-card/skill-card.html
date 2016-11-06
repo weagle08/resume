@@ -2,9 +2,9 @@
     <require from="components/skill-card/skill-card.css!"></require>
 
     <div class="skill-card">
-        <div class="skill-card-img">
+        <div class="skill-card-img" id.bind="skill">
             <i class="fa fa-spinner fa-spin" show.bind="!imageLoaded"></i>
-            <img id="theImage" show.bind="imageLoaded" style="z-index: 1000;"/>
+            <img show.bind="imageLoaded" style="z-index: 1000;"/>
         </div>
         <div class="skill-card-footer">
             <span>${skill | skillName}</span>

@@ -1,3 +1,9 @@
 {
-  "javascript": "images/javascript-logo.png"
+  "javascript": "images/javascript-logo.png",
+  "html": "images/html5-logo.png",
+  "css": "images/css3-logo.png",
+  "csharp": "images/csharp-logo.png",
+  "sass": "images/sass-logo.png",
+  "xaml": "images/xaml-logo.png",
+  "aspnetmvc": "images/aspnetmvc-logo.png"
 }

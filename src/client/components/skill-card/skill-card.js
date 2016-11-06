@@ -9,12 +9,18 @@ import {ImageService} from 'services/imageService';
 export class SkillCard {
     constructor(imageService) {
         this.imageService = imageService;
+        this.imageId = '#' + Math.floor((Math.random() * 1000) + 1);
     }
 
     attached() {
         this.imageService.getImage(this.skill).then((imageData) => {
             this.imageLoaded = true;
-            $('#theImage').attr('src', imageData);
+            let reader = new FileReader();
+            reader.onload = (event) => {
+                let base64String = event.target.result;
+                $('#' + this.skill + '> img').attr('src', base64String);
+            };
+            reader.readAsDataURL(imageData);
         });
     }
 }
