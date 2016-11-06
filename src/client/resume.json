@@ -7,7 +7,7 @@
     "email": "weagle08@gmail.com",
     "phone": "334-740-6353",
     "clearance": "DoD Secret",
-    "description": "Husband, father, and software enthusiast. I enjoy a good software challenge, and find being a software developer fun and engaging. I like to equate writing software to solving a sudoku puzzle, sometimes you get an easy puzzle and other times you get a puzzle that takes more than one attempt to solve correctly."
+    "summary": "Husband, father, and software enthusiast. I enjoy a good software challenge, and find being a software developer fun and engaging. I equate writing software to solving a sudoku puzzle, sometimes you get an easy puzzle that you can solve in a short moment, and other times you get a puzzle that takes more than one attempt to solve correctly. When I'm not working or enjoying my family, I enjoy developing for home automation projects, mainly utilizing the MSP430 via the EZ430-RF2500 development board, but have lately taken interest in the Xbee line of IC boards. NodeJS is my new passion, and has sparked my once dull interest in JavaScript. I also enjoy playing soccer in the Huntsville Adult Soccer League."
   },
   "experience": [
     {
@@ -25,7 +25,7 @@
             "technologies": ["nodejs", "aurelia", "gulp", "jspm", "npm", "jquery", "rest", "tls"],
             "tools": ["windows", "linux", "webstorm", "git", "jira"],
             "data": ["mongodb"],
-            "process": ["agile"]
+            "processes": ["agile"]
           },
           "work": [
             "lead team of 3 software engineers and an integrated tester to complete project requirements within budget and schedule constraints",
@@ -45,7 +45,7 @@
           "role": "Software Team Lead",
           "description": "ACD is a business intelligence reporting tool. ACD collects battalion level data from multiple locations and produces brigade and Army level reports on mission statistics. ACD is a public facing web application which uses TLS and CAC authentication. ACD has a mixed back end of NodeJS and .NET services, as well as both MongoDB and MS SQL Server databases. The MongoDB database is used to store user data, as well as metadata about battalion data pushes. The MS SQL Server is used for building business intelligence dimensions using SQL Server Integration Services for Qlik Sense consumption. The ACD front end employs the Aurelia framework as well as Qlik Sense business reporting tools.",
           "skills": {
-            "languages": [".net", "javascript", "css", "sass", "html"],
+            "languages": ["javascript", "css", "sass", "html"],
             "technologies": ["nodejs", "aurelia", "gulp", "jspm", "npm", "jquery", "rest", "tls", ".net", "ssis"],
             "tools": ["windows", "webstorm", "visualstudio", "git", "tfs", "qlik"],
             "data": ["mongodb", "mssql"],
@@ -107,8 +107,8 @@
           "description": "This was a small prototype to demonstrate refactoring the ADEC software. There were several problems in the design of the ADEC software that were made apparent as the software entered field quality testing and user test. The program managers chose me to lead a small 3 month effort to demonstrate implementing better software design for the system. The refactor demonstrated how concepts like dependency injection could lead to improved software through decoupling and easier testing. It also demonstrated how implementing patterns such as repository patterns between services and the database as well as model view view model on the client could lead to more maintainable software. It also demonstrated using REST services versus WCF soap services. This prototype also showed improved database interaction through the use of ORM tools like entity framework. The prototype was a success in that most patterns and tools demonstrated were integrated as permitted into the ADEC baseline.",
           "skills": {
             "languages": ["c#", "xaml"],
-            "technologies": ["entityframework", "webapi", "rest"],
-            "tools": ["windows", "visualstudio", "tfs"],
+            "technologies": ["ef", "web-api", "rest"],
+            "tools": ["windows", "visual-studio", "tfs"],
             "data": ["mssql"],
             "processes": ["agile"]
           },
@@ -147,7 +147,7 @@
           "skills": {
             "languages": ["c#", "xaml"],
             "technologies": [".net", "rest", "wpf"],
-            "tools": ["windows", "visualstudio", "svn", "jira"],
+            "tools": ["windows", "visual-studio", "svn", "jira"],
             "data": [],
             "processes": []
           },
@@ -161,7 +161,7 @@
           "skills": {
             "languages": ["c#"],
             "technologies": ["asp.net"],
-            "tools": ["visualstudio", "visualsourcesafe"],
+            "tools": ["visual-studio", "vss"],
             "data": ["mssql"],
             "processes": ["agile"]
           },
@@ -175,7 +175,7 @@
           "skills": {
             "languages": ["c#"],
             "technologies": [".net"],
-            "tools": ["visualstudio", "visualsourcesafe"],
+            "tools": ["visual-studio", "vss"],
             "data": ["mssql"],
             "processes": ["agile"]
           },

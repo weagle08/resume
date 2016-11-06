@@ -1,0 +1,57 @@
+.skill-card-footer {
+  text-align: center;
+  overflow: hidden;
+
+  span {
+    text-transform: uppercase;
+  }
+}
+
+.skill-card-img {
+  text-align: center;
+  font-size: 3em;
+}
+
+.skill-card {
+  display: inline-block;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 64em) {
+  .skill-card {
+    margin: 0.3rem;
+    height: 9rem;
+    width: 7rem;
+  }
+
+  .skill-card-img {
+    height: 7rem;
+    min-width: 7rem;
+    line-height: 7rem;
+    vertical-align: middle;
+  }
+
+  .skill-card-footer {
+    padding: 0.5rem 0;
+  }
+}
+
+@media screen and (max-width: 64em) {
+  .skill-card {
+    height: 4rem;
+    width: 3rem;
+  }
+
+  .skill-card-img {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    vertical-align: middle;
+    font-size: 2em;
+  }
+
+  .skill-card-footer {
+    padding: 0.3rem 0;
+    font-size: 0.5em;
+  }
+}

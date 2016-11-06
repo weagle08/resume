@@ -16,6 +16,12 @@
   text-transform: capitalize;
 }
 
+@media screen and (min-width: 64em) {
+  .section-part {
+    padding: 0 1.5rem;
+  }
+}
+
 @media screen and (max-width: 64em) {
   section:before {
     display: block;
@@ -39,5 +45,9 @@
     font-weight: 500;
     padding-right: 1rem;
     text-transform: capitalize;
+  }
+
+  .section-part {
+    padding: 0 0.5rem;
   }
 }

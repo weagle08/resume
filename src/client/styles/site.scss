@@ -6,8 +6,16 @@ body {
   line-height: 1.42857143;
   padding: 0;
   margin: 0;
+  background-color: $color-default;
 }
 
 .pull-right {
   float: right;
+}
+
+@media print
+{
+  .no-print {
+    display: none !important;
+  }
 }
