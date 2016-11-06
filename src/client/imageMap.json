@@ -1,9 +1,134 @@
 {
-  "javascript": "images/javascript-logo.png",
-  "html": "images/html5-logo.png",
-  "css": "images/css3-logo.png",
-  "csharp": "images/csharp-logo.png",
-  "sass": "images/sass-logo.png",
-  "xaml": "images/xaml-logo.png",
-  "aspnetmvc": "images/aspnetmvc-logo.png"
+  "javascript": {
+    "name": "JavaScript",
+    "path": "images/javascript-logo.png"
+  },
+  "html": {
+    "name": "HTML",
+    "path": "images/html5-logo.png"
+  },
+  "css": {
+    "name": "CSS",
+    "path": "images/css3-logo.png"
+  },
+  "csharp": {
+    "name": "C#",
+    "path": "images/csharp-logo.png"
+  },
+  "sass": {
+    "name": "SASS",
+    "path": "images/sass-logo.png"
+  },
+  "xaml": {
+    "name": "XAML",
+    "path": "images/xaml-logo.png"
+  },
+  "aspnetmvc": {
+    "name": ".NET MVC",
+    "path": "images/aspnetmvc-logo.png"
+  },
+  "nodejs": {
+    "name": "NodeJS",
+    "path": "images/nodejs-logo.png"
+  },
+  "aurelia": {
+    "name": "Aurelia",
+    "path": "images/aurelia-logo.png"
+  },
+  "gulp": {
+    "name": "Gulp",
+    "path": "images/gulp-logo.png"
+  },
+  "jspm": {
+    "name": "JSPM",
+    "path": "images/jspm-logo.png"
+  },
+  "npm": {
+    "name": "NPM",
+    "path": "images/npm-logo.png"
+  },
+  "jquery": {
+    "name": "jQuery",
+    "path": "images/jquery-logo.png"
+  },
+  "rest": {
+    "name": "REST",
+    "path": "images/rest-logo.png"
+  },
+  "tls": {
+    "name": "TLS",
+    "path": "images/tls-logo.png"
+  },
+  ".net": {
+    "name": ".NET",
+    "path": "images/dotnet-logo.png"
+  },
+  "ssis": {
+    "name": "SSIS",
+    "path": "images/sqlserver-logo.png"
+  },
+  "wpf": {
+    "name": "WPF",
+    "path": "images/xaml-logo.png"
+  },
+  "ef": {
+    "name": "EF",
+    "path": "images/entity-framework-logo.png"
+  },
+  "web-api": {
+    "name": "Web API",
+    "path": "images/aspnet-logo.png"
+  },
+  "windows": {
+    "name": "Windows",
+    "path": "images/windows-logo.png"
+  },
+  "linux": {
+    "name": "Linux",
+    "path": "images/linux-logo.png"
+  },
+  "webstorm": {
+    "name": "WebStorm",
+    "path": "images/webstorm-logo.png"
+  },
+  "git": {
+    "name": "Git",
+    "path": "images/git-logo.png"
+  },
+  "jira": {
+    "name": "Jira",
+    "path": "images/jira-logo.png"
+  },
+  "visualstudio": {
+    "name": "Visual Studio",
+    "path": "images/visualstudio-logo.png"
+  },
+  "tfs": {
+    "name": "TFS",
+    "path": "images/tfs-logo.png"
+  },
+  "qlik": {
+    "name": "Qlik",
+    "path": "images/qlik-logo.png"
+  },
+  "svn": {
+    "name": "SVN",
+    "path": "images/svn-logo.png"
+  },
+  "agile": {
+    "name": "Agile",
+    "path": "images/agile-logo.png"
+  },
+  "waterfall": {
+    "name": "Waterfall",
+    "path": "images/waterfall-logo.png"
+  },
+  "cmmi3": {
+    "name": "CMMI3",
+    "path": "images/cmmi3-logo.png"
+  },
+  "rup": {
+    "name": "RUP",
+    "path": "images/rup-logo.jpg"
+  }
 }

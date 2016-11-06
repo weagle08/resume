@@ -3,36 +3,33 @@
  */
 import {inject} from 'aurelia-framework';
 import {HttpClient} from 'aurelia-fetch-client';
+import {default as ImageMap} from 'imageMap.json!text';
 
-@inject(HttpClient)
+@inject(HttpClient, ImageMap)
 export class ImageService {
-    constructor(httpClient) {
+    constructor(httpClient, imageMap) {
         this.client = httpClient;
+        this.imageMap = JSON.parse(imageMap);
     }
 
-    _downloadImageMap() {
-        if(this.imageMap == null) {
-            return this.client.fetch('imageMap.json').then((response) => response.json()).then((imageMap) => {
-                this.imageMap = imageMap;
-                return this.imageMap;
-            });
+    getSkillImage(key) {
+        if(key != null) {
+            let uri = this.imageMap[key].path;
+            if(uri != null) {
+                return this.client.fetch(uri).then((response) => response.blob()).then((imageData) => {
+                    return imageData;
+                });
+            } else {
+                return Promise.reject(new Error('image not found'));
+            }
         } else {
-            return Promise.resolve(this.imageMap);
+            return Promise.reject(new Error('no key specified'));
         }
     }
 
-    getImage(key) {
+    getSkillName(key) {
         if(key != null) {
-            return this._downloadImageMap().then((imageMap) => {
-                let uri = imageMap[key];
-                if(uri != null) {
-                    return this.client.fetch(uri).then((response) => response.blob()).then((imageData) => {
-                        return imageData;
-                    });
-                } else {
-                    throw new Error('image not found');
-                }
-            });
+            return Promise.resolve(this.imageMap[key].name);
         } else {
             return Promise.reject(new Error('no key specified'));
         }

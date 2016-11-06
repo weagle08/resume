@@ -11,10 +11,6 @@ export class About {
     }
 
     attached() {
-        this.resumeService.getResume().then((resume) => {
-            this.resume = resume;
-        }, (error) => {
-            console.log(error);
-        }).catch(ex => console.log(ex));
+        this.resume = this.resumeService.getResume();
     }
 }

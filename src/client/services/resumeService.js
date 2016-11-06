@@ -3,25 +3,16 @@
  */
 import {inject} from 'aurelia-framework';
 import {HttpClient} from 'aurelia-fetch-client';
+import {default as Resume} from 'resume.json!text';
 
-@inject(HttpClient)
+@inject(HttpClient, Resume)
 export class ResumeService {
-    constructor(httpClient) {
+    constructor(httpClient, resume) {
         this.client = httpClient;
-    }
-
-    _downloadResume() {
-        if(this.resume == null) {
-            return this.client.fetch('/resume.json').then((response) => response.json()).then((resume) => {
-                this.resume = resume;
-                return this.resume;
-            });
-        } else {
-            return Promise.resolve(this.resume);
-        }
+        this.resume = JSON.parse(resume);
     }
 
     getResume() {
-        return this._downloadResume();
+        return this.resume;
     }
 }

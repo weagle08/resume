@@ -123,9 +123,8 @@
     button {
       color: $color-default;
       font-size: 1.2em;
-      background-color: transparent;
-      outline: none;
-      border: 0 transparent;
+      background-color: $color-menu;
+      border: 0 $color-menu;
     }
   }
 

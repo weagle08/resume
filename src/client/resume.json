@@ -108,7 +108,7 @@
           "skills": {
             "languages": ["csharp", "xaml"],
             "technologies": ["ef", "web-api", "rest"],
-            "tools": ["windows", "visual-studio", "tfs"],
+            "tools": ["windows", "visualstudio", "tfs"],
             "data": ["mssql"],
             "processes": ["agile"]
           },
@@ -147,7 +147,7 @@
           "skills": {
             "languages": ["csharp", "xaml"],
             "technologies": [".net", "rest", "wpf"],
-            "tools": ["windows", "visual-studio", "svn", "jira"],
+            "tools": ["windows", "visualstudio", "svn", "jira"],
             "data": [],
             "processes": []
           },
@@ -161,7 +161,7 @@
           "skills": {
             "languages": ["csharp"],
             "technologies": ["aspnetmvc"],
-            "tools": ["visual-studio", "vss"],
+            "tools": ["visualstudio", "tfs"],
             "data": ["mssql"],
             "processes": ["agile"]
           },
@@ -175,7 +175,7 @@
           "skills": {
             "languages": ["csharp"],
             "technologies": [".net"],
-            "tools": ["visual-studio", "vss"],
+            "tools": ["visualstudio", "tfs"],
             "data": ["mssql"],
             "processes": ["agile"]
           },
