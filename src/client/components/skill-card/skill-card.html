@@ -3,8 +3,8 @@
 
     <div class="skill-card">
         <div class="skill-card-img">
-            <i class="fa fa-spinner fa-spin"></i>
-            <img id="theImage"/>
+            <i class="fa fa-spinner fa-spin" show.bind="!imageLoaded"></i>
+            <img id="theImage" show.bind="imageLoaded" style="z-index: 1000;"/>
         </div>
         <div class="skill-card-footer">
             <span>${skill | skillName}</span>

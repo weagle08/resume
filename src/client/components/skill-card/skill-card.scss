@@ -39,19 +39,24 @@
 @media screen and (max-width: 64em) {
   .skill-card {
     height: 4rem;
-    width: 3rem;
+    width: 3.5rem;
   }
 
   .skill-card-img {
     height: 3rem;
-    width: 3rem;
+    width: 3.5rem;
     line-height: 3rem;
     vertical-align: middle;
     font-size: 2em;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
   }
 
   .skill-card-footer {
-    padding: 0.3rem 0;
+    padding: 0.2rem 0;
     font-size: 0.5em;
   }
 }

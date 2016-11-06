@@ -12,7 +12,7 @@ export class ResumeService {
 
     _downloadResume() {
         if(this.resume == null) {
-            return this.client.fetch('/resume.json').then((resume) => {
+            return this.client.fetch('/resume.json').then((response) => response.json()).then((resume) => {
                 this.resume = resume;
                 return this.resume;
             });

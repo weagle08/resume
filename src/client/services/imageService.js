@@ -12,7 +12,7 @@ export class ImageService {
 
     _downloadImageMap() {
         if(this.imageMap == null) {
-            return this.client.fetch('imageMap.json').then((imageMap) => {
+            return this.client.fetch('imageMap.json').then((response) => response.json()).then((imageMap) => {
                 this.imageMap = imageMap;
                 return this.imageMap;
             });
@@ -26,8 +26,13 @@ export class ImageService {
             return this._downloadImageMap().then((imageMap) => {
                 let uri = imageMap[key];
                 if(uri != null) {
-                    return this.client.fetch(uri).then((response) => {
-                        return response.body;
+                    return this.client.fetch('images/uml-logo.png').then((response) => response.blob()).then((imageData) => {
+                        let reader = new FileReader();
+                        reader.onload = function(event){
+                            let base64String = event.target.result; //event.target.results contains the base64 code to create the image.
+                            return base64String;
+                        };
+                        reader.readAsDataURL(imageData);//Convert the blob from clipboard to base64
                     });
                 } else {
                     throw new Error('image not found');

@@ -12,8 +12,9 @@ export class SkillCard {
     }
 
     attached() {
-        this.imageService.getImage(this.skill).then((response) => {
-            $('#theImage').attr('src', 'data:image/png;base64,' + response.body);
+        this.imageService.getImage(this.skill).then((imageData) => {
+            this.imageLoaded = true;
+            $('#theImage').attr('src', imageData);
         });
     }
 }
