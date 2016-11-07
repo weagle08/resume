@@ -130,5 +130,25 @@
   "rup": {
     "name": "RUP",
     "path": "images/rup-logo.jpg"
+  },
+  "mongodb": {
+    "name": "MongoDB",
+    "path": "images/mongo-logo.png"
+  },
+  "mssql": {
+    "name": "MS SQL",
+    "path": "images/sqlserver-logo.png"
+  },
+  "saic": {
+    "path": "images/saic-logo.png"
+  },
+  "hdi": {
+    "path": "images/hdi-logo.png"
+  },
+  "harris": {
+    "path": "images/harris-logo.png"
+  },
+  "pse": {
+    "path": "images/powersouth-logo.png"
   }
 }

@@ -1,0 +1,13 @@
+//large monitors
+@media screen and (min-width: 64em) {
+  .experience-section {
+    margin: 1.5em;
+  }
+}
+
+//small screens
+@media screen and (max-width: 64em) {
+  .experience-section {
+    margin: 0.5em;
+  }
+}

@@ -12,8 +12,10 @@
   "experience": [
     {
       "company": "SAIC",
+      "link": "http://www.saic.com/",
+      "icon": "saic",
       "location": "Huntsville, AL",
-      "dates": "October 2012-Present",
+      "date": "October 2012-Present",
       "projects": [
         {
           "name": "XWALK",
@@ -47,8 +49,8 @@
           "skills": {
             "languages": ["javascript", "css", "sass", "html"],
             "technologies": ["nodejs", "aurelia", "gulp", "jspm", "npm", "jquery", "rest", "tls", ".net", "ssis"],
-            "tools": ["windows", "webstorm", "visualstudio", "git", "tfs", "qlik"],
-            "data": ["mongodb", "mssql"],
+            "tools": ["windows", "webstorm", "visualstudio", "git", "tfs"],
+            "data": ["mongodb", "mssql", "qlik"],
             "processes": ["rup"]
           },
           "work": [
@@ -136,8 +138,10 @@
     },
     {
       "company": "HDI Solutions",
+      "link": "http://www.hdisolutions.com/",
+      "icon": "hdi",
       "location": "Auburn, AL",
-      "dates": "November 2011 - October 2012",
+      "date": "November 2011 - October 2012",
       "projects": [
         {
           "name": "Electronic Case Management System (eCASE) v2.0 (prototype)",
@@ -185,15 +189,20 @@
     },
     {
       "company": "Harris Corporation",
+      "link": "https://www.harris.com/",
+      "icon": "harris",
       "location": "Melbourne, FL",
-      "dates": "June 2008 - November 2011",
+      "date": "June 2008 - November 2011",
       "projects": [
 
       ]
     },
     {
-      "company": "Power South Energy Cooperative",
-      "dates": "August 2003 - August 2007 (20 months of total full time experience)",
+      "company": "Power South Energy",
+      "link": "http://www.powersouth.com/",
+      "icon": "pse",
+      "location": "Andalusia, AL",
+      "date": "August 2003 - August 2007 (20 months of total full time experience)",
       "projects": [
 
       ]

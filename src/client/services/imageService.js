@@ -17,7 +17,14 @@ export class ImageService {
             let uri = this.imageMap[key].path;
             if(uri != null) {
                 return this.client.fetch(uri).then((response) => response.blob()).then((imageData) => {
-                    return imageData;
+                    return new Promise((resolve, reject) => {
+                        let reader = new FileReader();
+                        reader.onload = (event) => {
+                            let base64String = event.target.result;
+                            resolve(base64String);
+                        };
+                        reader.readAsDataURL(imageData);
+                    });
                 });
             } else {
                 return Promise.reject(new Error('image not found'));
