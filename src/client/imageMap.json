@@ -161,5 +161,13 @@
   "eclipse": {
     "name": "Eclipse",
     "path": "images/eclipse-logo.png"
+  },
+  "xml": {
+    "name": "XML",
+    "path": "images/xml-logo.png"
+  },
+  "uml": {
+    "name": "UML",
+    "path": "images/uml-logo.png"
   }
 }

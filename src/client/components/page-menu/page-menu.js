@@ -22,6 +22,6 @@ export class PageMenu {
     }
 
     _onMenuItemClick() {
-        console.log('clicked');
+        this._onToggleMenuClick();
     }
 }

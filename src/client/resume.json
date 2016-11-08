@@ -23,9 +23,9 @@
           "role": "Software Team Lead",
           "description": "XWALK is an obsolescence management tool for Army PM AGSE. It allows the AGSE users to identify and resolve issues with parts which are nearing end of life within Army systems. XWALK is a public facing web application using TLS and has integrated CAC authentication via an OAuth 2.0 server and user role management. XWALK employs NodeJS as the primary server-side technology with a MongDB database. The frontend client is a single page application employing the Aurelia framework.",
           "skills": {
-            "languages": ["javascript", "html", "css", "csharp", "sass"],
-            "technologies": ["nodejs", "aurelia", "gulp", "jspm", "npm", "jquery", "rest", "tls"],
-            "tools": ["windows", "linux", "webstorm", "git", "jira"],
+            "languages": ["javascript", "html", "css", "csharp"],
+            "technologies": ["nodejs", "aurelia", "gulp", "jspm", "npm", "jquery", "rest", "tls", "sass"],
+            "tools": ["windows", "linux", "webstorm", "git", "jira", "uml"],
             "data": ["mongodb"],
             "processes": ["agile"]
           },
@@ -47,9 +47,9 @@
           "role": "Software Team Lead",
           "description": "ACD is a business intelligence reporting tool. ACD collects battalion level data from multiple locations and produces brigade and Army level reports on mission statistics. ACD is a public facing web application which uses TLS and CAC authentication. ACD has a mixed back end of NodeJS and .NET services, as well as both MongoDB and MS SQL Server databases. The MongoDB database is used to store user data, as well as metadata about battalion data pushes. The MS SQL Server is used for building business intelligence dimensions using SQL Server Integration Services for Qlik Sense consumption. The ACD front end employs the Aurelia framework as well as Qlik Sense business reporting tools.",
           "skills": {
-            "languages": ["javascript", "css", "sass", "html"],
-            "technologies": ["nodejs", "aurelia", "gulp", "jspm", "npm", "jquery", "rest", "tls", ".net", "ssis"],
-            "tools": ["windows", "webstorm", "visualstudio", "git", "tfs"],
+            "languages": ["javascript", "css", "html"],
+            "technologies": ["nodejs", "aurelia", "gulp", "jspm", "npm", "jquery", "rest", "tls", ".net", "ssis", "sass"],
+            "tools": ["windows", "webstorm", "visualstudio", "git", "tfs", "uml"],
             "data": ["mongodb", "mssql", "qlik"],
             "processes": ["rup"]
           },
@@ -72,7 +72,7 @@
           "skills": {
             "languages": ["javascript"],
             "technologies": ["nodejs", "gulp", "npm", "rest", "tls"],
-            "tools": ["windows", "webstorm", "tfs"],
+            "tools": ["windows", "webstorm", "tfs", "uml"],
             "data": ["mongodb"],
             "processes": ["agile"]
           },
@@ -88,9 +88,9 @@
           "role": "Software Team Lead",
           "description": "This was a small prototype to demonstrate refactoring the ADEC software. There were several problems in the design of the ADEC software that were made apparent as the software entered field quality testing and user test. The program managers chose me to lead a small 3 month effort to demonstrate implementing better software design for the system. The refactor demonstrated how concepts like dependency injection could lead to improved software through decoupling and easier testing. It also demonstrated how implementing patterns such as repository patterns between services and the database as well as model view view model on the client could lead to more maintainable software. It also demonstrated using REST services versus WCF soap services. This prototype also showed improved database interaction through the use of ORM tools like entity framework. The prototype was a success in that most patterns and tools demonstrated were integrated as permitted into the ADEC baseline.",
           "skills": {
-            "languages": ["csharp", "xaml"],
-            "technologies": ["ef", "web-api", "rest"],
-            "tools": ["windows", "visualstudio", "tfs"],
+            "languages": ["csharp"],
+            "technologies": ["ef", "web-api", "rest", "wpf"],
+            "tools": ["windows", "visualstudio", "tfs", "uml"],
             "data": ["mssql"],
             "processes": ["agile"]
           },
@@ -128,7 +128,7 @@
           "role": "Lead Designer/Developer",
           "description": "This was a prototype re-write of the current eCASE management system. It was intended to be a replacement of the current system with new features and updated user interface. The main goals of this version over the previous version were to enable the application to run with no internet connection, add features which were hard to implement in the current baseline, and improve user experience. The prototype was designed as a desktop application, but with service oriented architecture so that a web interface could be added.",
           "skills": {
-            "languages": ["csharp", "xaml"],
+            "languages": ["csharp"],
             "technologies": [".net", "rest", "wpf"],
             "tools": ["windows", "visualstudio", "svn", "jira"],
             "data": [],
@@ -242,7 +242,7 @@
       "name": "Simple Budget (deprecated)",
       "description": "Simple account tracking application written for WP8 mobile. Was previously available in Windows mobile store.",
       "skills": {
-        "languages": ["csharp", "xaml"],
+        "languages": ["csharp"],
         "technologies": [".net", "xaml"],
         "tools": ["windows", "visualstudio", "svn"],
         "data": [],
