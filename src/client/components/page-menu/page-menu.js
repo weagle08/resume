@@ -23,5 +23,6 @@ export class PageMenu {
 
     _onMenuItemClick() {
         this._onToggleMenuClick();
+        return true;
     }
 }

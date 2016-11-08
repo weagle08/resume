@@ -13,7 +13,7 @@
             <button click.trigger="_onToggleMenuClick()"><i class="fa fa-bars"></i></button>
             <span class="menu-sm-title">Ben Johnson</span>
         </div>
-        <ul class="${navClass}">
+        <ul class="${navClass}" click.delegate="_onMenuItemClick()">
             <li><a href="#about"><i class="fa fa-pencil" style="color: #FFFF00;"></i><span>About</span></a></li>
             <li><a href="#skills"><i class="fa fa-wrench" style="color: #e600e5;"></i><span>Skills</span></a></li>
             <li><a href="#experience"><i class="fa fa-th-list" style="color: #e60000;"></i><span>Experience</span></a></li>
