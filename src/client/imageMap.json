@@ -142,13 +142,24 @@
   "saic": {
     "path": "images/saic-logo.png"
   },
-  "hdi": {
-    "path": "images/hdi-logo.png"
+  "c": {
+    "name": "C",
+    "path": "images/c-logo.png"
   },
-  "harris": {
-    "path": "images/harris-logo.png"
+  "cpp": {
+    "name": "C++",
+    "path": "images/cpp-logo.png"
   },
-  "pse": {
-    "path": "images/powersouth-logo.png"
+  "cordova": {
+    "name": "Cordova",
+    "path": "images/cordova-logo.png"
+  },
+  "sqlite": {
+    "name": "SQLite",
+    "path": "images/sqlite-logo.png"
+  },
+  "eclipse": {
+    "name": "Eclipse",
+    "path": "images/eclipse-logo.png"
   }
 }

@@ -1,7 +1,11 @@
-<template>
+<template bindable="projects">
     <require from="components/resume-section/resume-section.html"></require>
+    <require from="components/projects/projects.css!"></require>
+    <require from="components/project-card/project-card"></require>
 
     <resume-section title="projects" identifier="projects">
-        projects
+        <div class="project-section" repeat.for="p of resume.projects">
+            <project-card project.bind="p"></project-card>
+        </div>
     </resume-section>
 </template>

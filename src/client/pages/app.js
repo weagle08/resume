@@ -16,19 +16,5 @@ export class App {
 
             config.mapUnknownRoutes('pages/app');
         });
-
-        // //configure the fetch client
-        // this.httpClient.configure((config) => {
-        //     config.withInterceptor({
-        //         response(response) {
-        //             if(response.bodyUsed === true) {
-        //                 return response.json().catch(() => response).then(r => response.ok ? r : Promise.reject(r));
-        //             } else {
-        //                 return response;
-        //             }
-        //
-        //         }
-        //     });
-        // });
     }
 }

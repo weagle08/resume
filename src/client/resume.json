@@ -6,6 +6,7 @@
     "name": "Ben Johnson",
     "email": "weagle08@gmail.com",
     "phone": "334-740-6353",
+    "github": "https://github.com/weagle08",
     "clearance": "DoD Secret",
     "summary": "Husband, father, and software enthusiast. I enjoy a good software challenge, and find being a software developer fun and engaging. I equate writing software to solving a sudoku puzzle, sometimes you get an easy puzzle that you can solve in a short moment, and other times you get a puzzle that takes more than one attempt to solve correctly. When I'm not working or enjoying my family, I enjoy developing for home automation projects, mainly utilizing the MSP430 via the EZ430-RF2500 development board, but have lately taken interest in the Xbee line of IC boards. NodeJS is my new passion, and has sparked my once dull interest in JavaScript. I also enjoy playing soccer in the Huntsville Adult Soccer League."
   },
@@ -13,7 +14,6 @@
     {
       "company": "SAIC",
       "link": "http://www.saic.com/",
-      "icon": "saic",
       "location": "Huntsville, AL",
       "date": "October 2012-Present",
       "projects": [
@@ -60,26 +60,6 @@
             "assist in efforts to evaluate correct tool set for use on project",
             "assist in developing code base",
             "document design",
-            "work with subject matter experts to determine applicable reports",
-            "work with program managers to keep them updated on project progress and give monthly metric and status reports"
-          ]
-        },
-        {
-          "name": "Aviation Data Exploitation Capability (ADEC) v2.0 - Hazards and Events (H&E)",
-          "date": "February 2016 - June 2016",
-          "role": "Software Team Lead",
-          "description": "H&E was a new capability for the ADEC software. H&E allowed the solider to report any safety concerns he or she may have encountered on a mission. Reporting of safety concerns could be anonymous if desired. These safety issues after being collected are then combined across all battalions at ACD where they are then analyzed and the results pushed back to battalions where they are then used to assist in determining possible potential outcomes for future missions based on mission parameters. H&E was written in C# .NET and used WPF for implementing the visual component.",
-          "skills": {
-            "languages": ["csharp", "xaml"],
-            "technologies": [".net", "wpf"],
-            "tools": ["windows", "visualstudio", "git", "tfs"],
-            "data": ["mssql"],
-            "processes": ["rup"]
-          },
-          "work": [
-            "lead team of 3 developers and 1 integrated tester to complete project requirements within schedule constraints",
-            "derive software requirements from system level requirements which are then broken into developer task and worked using a RUP approach",
-            "interface with customer in order to more clearly define project goals not clearly described in system requirements",
             "work with subject matter experts to determine applicable reports",
             "work with program managers to keep them updated on project progress and give monthly metric and status reports"
           ]
@@ -139,7 +119,6 @@
     {
       "company": "HDI Solutions",
       "link": "http://www.hdisolutions.com/",
-      "icon": "hdi",
       "location": "Auburn, AL",
       "date": "November 2011 - October 2012",
       "projects": [
@@ -190,7 +169,6 @@
     {
       "company": "Harris Corporation",
       "link": "https://www.harris.com/",
-      "icon": "harris",
       "location": "Melbourne, FL",
       "date": "June 2008 - November 2011",
       "projects": [
@@ -200,7 +178,6 @@
     {
       "company": "Power South Energy",
       "link": "http://www.powersouth.com/",
-      "icon": "pse",
       "location": "Andalusia, AL",
       "date": "August 2003 - August 2007 (20 months of total full time experience)",
       "projects": [
@@ -208,11 +185,82 @@
       ]
     }
   ],
+  "projects": [
+    {
+      "name": "authentication-server",
+      "description": "OAuth 2.0 authentication server meant for SSO for multiple applications",
+      "skills": {
+        "languages": ["javascript"],
+        "technologies": ["nodejs", "gulp", "npm", "rest", "tls"],
+        "tools": ["webstorm", "git"],
+        "data": ["mongodb"],
+        "processes": ["agile"]
+      },
+      "work": [
+        "create single sign on server",
+        "allow registered users to create applications and manage access to the application via the authentication server",
+        "offer users the ability to user other SSO services such as Google, Twitter, or Facebook",
+        "secure and encrypt all traffic between the server and clients",
+        "provide as an in cloud service"
+      ]
+    },
+    {
+      "name": "Home Automation",
+      "description": "Automation of commonly used items in the house such as light switches, outlets, garage door, door locks, and air conditioning vents. Utilized multiple embedded technologies such as the EZ430-RF2500 development board, as well as XBee radios.",
+      "skills": {
+        "languages": ["c", "cpp"],
+        "technologies": ["rest"],
+        "tools": ["eclipse", "git"],
+        "data": ["sqlite"],
+        "processes": ["agile"]
+      },
+      "work": [
+        "design circuit layout",
+        "determine components to use"
+      ]
+    },
+    {
+      "name": "Account Track",
+      "description": "Application that allows user to track expenses. Accounts within the application are sharable with other users and can be accessed across multiple devices. Written in cordova and available for both iOS and Android.",
+      "skills": {
+        "languages": ["javascript"],
+        "technologies": ["nodejs", "gulp", "npm", "rest", "cordova"],
+        "tools": ["webstorm", "git"],
+        "data": ["mongodb"],
+        "processes": ["agile"]
+      },
+      "work": [
+        "cross platform account/budget tracking mobile application",
+        "allows multi-device sign on",
+        "allows account sharing",
+        "works on all mobile OS",
+        "built using Apache Cordova framework",
+        "backend runs on NodeJS"
+      ]
+    },
+    {
+      "name": "Simple Budget (deprecated)",
+      "description": "Simple account tracking application written for WP8 mobile. Was previously available in Windows mobile store.",
+      "skills": {
+        "languages": ["csharp", "xaml"],
+        "technologies": [".net", "xaml"],
+        "tools": ["windows", "visualstudio", "svn"],
+        "data": [],
+        "processes": []
+      },
+      "work": [
+        "WP8 native application",
+        "allow user to track daily expenses",
+        "allow user to edit and delete entries"
+      ]
+    }
+  ],
   "education": [
     {
       "school": "Auburn University",
+      "link": "http://www.auburn.edu",
       "location": "Auburn, AL",
-      "dates": "2002 - 2008",
+      "date": "2002 - 2008",
       "degree": "Electrical Computer Engineering"
     }
   ]

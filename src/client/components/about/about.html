@@ -1,10 +1,11 @@
 <template>
     <require from="components/resume-section/resume-section.html"></require>
+    <require from="components/about/about.css!"></require>
 
     <resume-section title="about" identifier="about">
-        <div class="section-part">
+        <div class="about">
             <h2>Summary</h2>
-            <p>${resume.about.summary}</p>
+            <p style="margin: 0;">${resume.about.summary}</p>
         </div>
     </resume-section>
 </template>

@@ -27,6 +27,14 @@ export class Skills {
                 this.processes = this.processes.concat(p.skills.processes.filter((v) => this.processes.indexOf(v) == -1));
             }
         }
+
+        for(let p of this.resume.projects) {
+            this.languages = this.languages.concat(p.skills.languages.filter((v) => this.languages.indexOf(v) == -1));
+            this.technologies = this.technologies.concat(p.skills.technologies.filter((v) => this.technologies.indexOf(v) == -1));
+            this.tools = this.tools.concat(p.skills.tools.filter((v) => this.tools.indexOf(v) == -1));
+            this.data = this.data.concat(p.skills.data.filter((v) => this.data.indexOf(v) == -1));
+            this.processes = this.processes.concat(p.skills.processes.filter((v) => this.processes.indexOf(v) == -1));
+        }
     }
 }
 

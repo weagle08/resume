@@ -63,5 +63,9 @@
       "whatwg-fetch": "npm:whatwg-fetch@^1.0.0"
     },
     "devDependencies": {}
+  },
+  "dependencies": {
+    "compression": "^1.6.2",
+    "express": "^4.14.0"
   }
 }

@@ -3,41 +3,45 @@
   box-shadow:0 0.125rem 0.125rem 0 rgba(0,0,0,.14),0 0.1875rem 0.0625rem -0.125rem rgba(0,0,0,.2),0 0.0625rem 0.3125rem 0 rgba(0,0,0,.12);
 }
 
+.experience-card-content {
+  padding: 1.2em;
+}
+
 .experience-card-header {
   margin: 0 1em;
+
+  a {
+    color: #616161;
+  }
+
   h2 {
     display: inline-block;
     text-decoration: underline;
   }
+  i {
+    color: #3f51b5;
+  }
 }
 
-.experience-card-logo {
-  display: inline-block;
+h2 {
+  margin: 0;
+}
+
+.experience-date {
+  display: block;
 }
 
 //large monitors
 @media screen and (min-width: 64em) {
-  .experience-date {
-    float: right;
-    line-height: 4.625rem;
-    vertical-align: middle;
-  }
+
 }
 
 //small screens
 @media screen and (max-width: 64em) {
-  .experience-date {
-    display: block;
-  }
-
   .experience-card-header {
     h2 {
       font-size: 1em;
-      margin: 0;
-    }
-
-    i {
-      display: none;
+      margin: 0.5em 0;
     }
   }
 }

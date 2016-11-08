@@ -1,3 +1,26 @@
 <template>
+    <require from="components/project-card/project-card.css!"></require>
 
+    <div class="project-card">
+        <div class="project-header">
+            <h3>${project.name}</h3>
+            <span if.bind="project.date"><i class="fa fa-calendar"></i> ${project.date}</span>
+            <span if.bind="project.role"><i class="fa fa-tag"></i> ${project.role}</span>
+        </div>
+        <hr/>
+        <div class="project-content">
+            <div>
+                <span>${project.description}</span>
+            </div>
+            <hr/>
+            <div>
+                <table>
+                    <tr repeat.for="w of project.work">
+                        <td style="vertical-align: top;"><i class="fa fa-dot-circle-o"></i></td>
+                        <td><span>${w}</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
 </template>
