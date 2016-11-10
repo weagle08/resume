@@ -8,6 +8,22 @@ const compression = require('compression');
 var app = express();
 app.set('port', 80);
 
+//add necessary headers
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'GET,OPTIONS');
+    res.header('Access-Control-Allow-Credentials', false);
+    res.header('Access-Control-Max-Age', 86400);
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+    res.header('Content-*', '*');
+    next();
+});
+
+//fulfil pre-flight promise request
+app.options('*', (req, res) => {
+    res.status(200).send('ok');
+});
+
 app.use(express.static(path.join(__dirname, 'www')));
 
 app.use(compression());
