@@ -34,4 +34,9 @@ export class ImageService {
             return Promise.reject(new Error('no key specified'));
         }
     }
+
+    static getSkillName(key) {
+        let t = JSON.parse(ImageMap);
+        return t[key].name;
+    }
 }

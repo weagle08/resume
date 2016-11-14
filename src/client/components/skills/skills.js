@@ -3,6 +3,7 @@
  */
 import {inject} from 'aurelia-framework';
 import {ResumeService} from 'services/resumeService';
+import {ImageService} from 'services/imageService';
 
 @inject(ResumeService)
 export class Skills {
@@ -38,6 +39,16 @@ export class Skills {
     }
 }
 
-function dedupeArray(){
+export class SkillListValueConverter {
+    toView(value) {
+        let retVal = [];
 
+        if(value != null) {
+            for(let v of value) {
+                retVal.push(ImageService.getSkillName(v));
+            }
+        }
+
+        return retVal.join(', ');
+    }
 }

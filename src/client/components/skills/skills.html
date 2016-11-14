@@ -5,22 +5,27 @@
     <resume-section title="skills" identifier="skills">
         <div class="section-part">
             <h2>Languages</h2>
+            <span class="print-only">${languages | skillList}</span>
             <skill-card repeat.for="l of languages" skill.bind="l"></skill-card>
         </div>
         <div class="section-part">
             <h2>Technologies</h2>
+            <span class="print-only">${technologies | skillList}</span>
             <skill-card repeat.for="t of technologies" skill.bind="t"></skill-card>
         </div>
         <div class="section-part">
             <h2>Tools</h2>
+            <span class="print-only">${tools | skillList}</span>
             <skill-card repeat.for="t of tools" skill.bind="t"></skill-card>
         </div>
         <div class="section-part">
             <h2>Data</h2>
+            <span class="print-only">${data | skillList}</span>
             <skill-card repeat.for="d of data" skill.bind="d"></skill-card>
         </div>
         <div class="section-part">
             <h2>Processes</h2>
+            <span class="print-only">${processes | skillList}</span>
             <skill-card repeat.for="p of processes" skill.bind="p"></skill-card>
         </div>
     </resume-section>
