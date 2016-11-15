@@ -19,11 +19,19 @@ body {
 
 @media print
 {
+  body {
+    font-size: 12px;
+  }
+
   .no-print {
     display: none !important;
   }
 
   .print-only {
     display: initial;
+  }
+
+  .no-print-shadow {
+    box-shadow: none !important;
   }
 }

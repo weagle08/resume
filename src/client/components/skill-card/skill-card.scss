@@ -21,9 +21,13 @@
     width: 6.25rem;
   }
 
-  .skill-card-img, img {
+  .skill-card-img {
+    height: 6.25rem;
+    width: 6.25rem;
+    >img {
       height: 6.25rem;
       width: 6.25rem;
+    }
   }
 
   .skill-card-img {

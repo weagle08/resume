@@ -1,11 +1,11 @@
 /**
- * Created by ben on 11/7/16.
+ * Created by ben on 11/14/16.
  */
 import {inject} from 'aurelia-framework';
 import {ResumeService} from 'services/resumeService';
 
 @inject(ResumeService)
-export class Contact {
+export class ContactHeader {
     constructor(resumeService) {
         this.resumeService = resumeService;
     }

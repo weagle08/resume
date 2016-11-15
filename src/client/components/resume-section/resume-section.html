@@ -1,7 +1,7 @@
-<template bindable="identifier, title">
+<template bindable="identifier, title, look">
     <require from="components/resume-section/resume-section.css!"></require>
 
-    <section id="${identifier}" title="">
+    <section id="${identifier}" title="" class="${look}">
         <div class="section-header">
             <span class="section-title pull-right">${title}</span>
         </div>
