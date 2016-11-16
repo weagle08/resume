@@ -156,7 +156,7 @@
           "name": "Electronic Case Management System (eCASE)",
           "date": "November 2011 - October 2012",
           "role": "Software Developer",
-          "description": "eCASE is an electronic case management system for police departments. At the time it managed police reporting for the Lee County Sheriff Office in Lee County, AL. It was built on ASP.NET 2.0 technology and employed MS SQL Server as the database.",
+          "description": "eCASE is an electronic case management system for police departments. At the time it managed police reporting for the Lee County Sheriff Office in Lee County, AL. It handled all police activity, from 911 call center dispatching to in the field recording of incidents. eCASE was a .NET 2.0 web application with a MS SQL server database.",
           "skills": {
             "languages": ["csharp"],
             "technologies": ["aspnetmvc"],
@@ -200,7 +200,7 @@
           "name": "Sensor Product Controller",
           "date": "2009-2011",
           "role": "Software Engineer",
-          "description": "",
+          "description": "The goal of this application was to enable remote management of many different types of cellular exploitation devices. Existing systems required local management and interfacing, and the sensor controller application allowed for remote management via the internet through secure VPN tunnels which were set up for communication. Data from the remote devices was collected and location information was displayed on a 2D map. Names of application and devices are withheld for sensitivity reasons.",
           "skills": {
             "languages": ["csharp"],
             "technologies": [".net", "wpf", "gsm", "openvpn", "ef"],
@@ -226,7 +226,7 @@
           "name": "Dynamic PDF Generator",
           "date": "2011",
           "role": "Lead Software Engineer",
-          "description": "",
+          "description": "This was a small application to allow customers to make custom user guides for Harris provided systems. User guides for many systems could exceed several hundred pages and this application allowed the user to select sections from a PDF to create a custom user guide for a specific mission.",
           "skills": {
             "languages": ["csharp"],
             "technologies": [".net", "wpf"],
@@ -245,7 +245,7 @@
           "name": "PC Based Phone Paging System",
           "date": "2009-2010",
           "role": "Software Engineer",
-          "description": "",
+          "description": "The PC phone paging system allowed the user to manipulate cellular carrier implementation exploits in order to determine certain characteristics of a cellular device. Names and specific operation is withheld for sensitivity reasons.",
           "skills": {
             "languages": ["csharp"],
             "technologies": [".net", "wpf"],
@@ -263,7 +263,7 @@
           "name": "Sensor Product Controller (Prototype)",
           "date": "2008-2010",
           "role": "Software Engineer",
-          "description": "",
+          "description": "This application was a prototype to determine the feasibility of creating an application which could control several different types of Harris cellular products remotely. Many Harris cellular products were local control only and the customer wanted a remote interface to control sensors. This prototype won a $5M follow on contract.",
           "skills": {
             "languages": ["csharp"],
             "technologies": [".net", "wpf"],
@@ -293,7 +293,7 @@
           "name": "Engineering Co-Op",
           "date": "2003-2007",
           "role": "Electrical Engineer",
-          "description": "",
+          "description": "This was a co-op with a power company. I performed several duties in a mixture of diciplines from electrical engineering to software development.",
           "skills": {
             "languages": [],
             "technologies": [".net"],
