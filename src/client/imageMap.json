@@ -169,5 +169,25 @@
   "uml": {
     "name": "UML",
     "path": "images/uml-logo.png"
+  },
+  "xna": {
+    "name": "XNA",
+    "path": "images/xna-logo.png"
+  },
+  "gdal": {
+    "name": "GDAL",
+    "path": "images/gdal-logo.png"
+  },
+  "geoserver": {
+    "name": "GeoServer",
+    "path": "images/geoserver-logo.png"
+  },
+  "gsm": {
+    "name": "GSM",
+    "path": "images/cellular-logo.png"
+  },
+  "openvpn": {
+    "name": "OpenVPN",
+    "path": "images/openvpn-logo.png"
   }
 }

@@ -32,13 +32,12 @@
           "work": [
             "lead team of 3 software engineers and an integrated tester to complete project requirements within budget and schedule constraints",
             "derive software requirements from system level requirements which are then broken into developer task and worked using an Agile approach",
-            "provide monthly status updates on project status such as requirements progress, SLOC, identify any risk and schedule concerns",
-            "conduct software engineering working groups for interfacing with customer to ensure the software meets expectations of the customer",
+            "provide monthly status updates to management on project status such as requirements progress, SLOC, identify any risk and schedule concerns",
+            "conduct software engineering working groups with customer to ensure the software meets their expectations",
             "provide mentoring and guidance as a senior developer to more junior developers on the team",
             "lay out software architecture and lead effort to select tool set to be used",
 	        "assist in developing code base",
-            "design documentation such as data flow diagrams, database tables, and sequence diagrams",
-            "assist in creating project documentation"
+            "create design documentation such as data flow diagrams, database tables, and sequence diagrams"
           ]
         },
         {
@@ -79,7 +78,9 @@
           "work": [
             "work with team of 3 developers and 1 integrated tester to complete project requirements within schedule constraints",
             "primary developer for server side functions",
-            "produce design documentation for data flow and software design"
+            "produce design documentation for data flow and software design",
+            "create system to allow battalion servers to send disparate data to cold storage in order to hold for later analysis",
+            "include metadata with uploads in order to identify data so that it can later be processed"
           ]
         },
         {
@@ -97,22 +98,32 @@
           "work": [
             "lead team of two developers to create working prototype",
             "design and develop method for integrating new designs and technologies into an existing system",
-            "give presentation to software team explaining prototype design and functionality"
+            "give presentation to software team explaining prototype design and functionality",
+            "demonstrate moving current older technologies such as WCF SOAP services to newer Web API REST services",
+            "demonstrate how an ORM like entity framework can save development time for simple database CRUD operations"
           ]
         },
         {
           "name": "Aviation Data Exploitation Capability (ADEC) v1.0 - Analysis and Visualization System (AVS)",
           "date": "October 2012 - November 2014",
           "role": "Senior Software Developer",
-          "description": "",
+          "description": "AVS is a visualization tool for safety, maintenance, and training purposes. Its purpose is to allow the playback of flights to provide analysis and visuals of flight events. With the AVS tool users can view and analyze all recorded parameters from a flight and also view the flight in both a 3D and 2D environment. The user can control parameters such as playback speed, map layers, and event parameter colors when visualizing a flight.",
           "skills": {
-            "languages": [],
-            "technologies": [],
-            "tools": [],
-            "data": [],
-            "processes": []
+            "languages": ["csharp", "javascript"],
+            "technologies": ["rest", "wpf", "ef", "xna", "nodejs", ".net", "gdal", "geoserver"],
+            "tools": ["windows", "visualstudio", "tfs"],
+            "data": ["mssql"],
+            "processes": ["agile"]
           },
-          "work": []
+          "work": [
+            "assumed a lead role in development of a WMS compliant map server which can cache served data and handle multiple client request simultaneously",
+            "create pilot training tool which can recreate flights from on-board aircraft data collection",
+            "analyze raw flight data to detect in flight events",
+            "graphically display flight parameters and events in real time flight playback",
+            "play flight back in 3D environment complete with real world map data and terrain at real time as well as user selected speeds",
+            "run as standalone application as well as plugin to the ADEC system",
+            "currently working with development team of 9 in SCRUM environment to meet schedule and budget goals"
+          ]
         }
       ]
     },
@@ -131,16 +142,21 @@
             "languages": ["csharp"],
             "technologies": [".net", "rest", "wpf"],
             "tools": ["windows", "visualstudio", "svn", "jira"],
-            "data": [],
-            "processes": []
+            "data": ["mssql"],
+            "processes": ["agile"]
           },
-          "work": []
+          "work": [
+            "design and present concepts for a next generation case management system prototype to replace existing legacy system",
+            "allow for robust inter-agency communication",
+            "allow system to operate even when internet connection is lost",
+            "led team of two developers to design and present new case management prototype"
+          ]
         },
         {
           "name": "Electronic Case Management System (eCASE)",
           "date": "November 2011 - October 2012",
           "role": "Software Developer",
-          "description": "eCASE is an electronic case management system for police departments. At the time it managed police reporting for Lee County Sherrifs Office in Lee County, AL. It was build on ASP.NET 2.0 technology and employed MS SQL Server as the database.",
+          "description": "eCASE is an electronic case management system for police departments. At the time it managed police reporting for the Lee County Sheriff Office in Lee County, AL. It was built on ASP.NET 2.0 technology and employed MS SQL Server as the database.",
           "skills": {
             "languages": ["csharp"],
             "technologies": ["aspnetmvc"],
@@ -148,7 +164,11 @@
             "data": ["mssql"],
             "processes": ["agile"]
           },
-          "work": []
+          "work": [
+            "maintain and enhance existing case management system for law enforcement agencies",
+            "modify ASP.Net web applications in order to meet changing law enforcement office needs",
+            "interfacing directly with customer to troubleshoot and solve technical problems"
+          ]
         },
         {
           "name": "TX-DOT",
@@ -162,7 +182,11 @@
             "data": ["mssql"],
             "processes": ["agile"]
           },
-          "work": []
+          "work": [
+            "maintain and refactor existing code",
+            "fix existing bugs and enhance system processes in order to eliminate manual task",
+            "troubleshoot internal problems"
+          ]
         }
       ]
     },
@@ -172,7 +196,91 @@
       "location": "Melbourne, FL",
       "date": "June 2008 - November 2011",
       "projects": [
-
+        {
+          "name": "Sensor Product Controller",
+          "date": "2009-2011",
+          "role": "Software Engineer",
+          "description": "",
+          "skills": {
+            "languages": ["csharp"],
+            "technologies": [".net", "wpf", "gsm", "openvpn", "ef"],
+            "tools": ["visualstudio"],
+            "data": ["mssql", "sqlite"],
+            "processes": ["agile"]
+          },
+          "work": [
+            "produce sensor controller application which can remotely manage and command multiple cellular sensor products",
+            "improve upon sensor network prototype to add support for wider range of cellular sensor products",
+            "add controls for multiple cellular protocol bands",
+            "use SOA to create a smarter sensor network which can connect to and be controlled by multiple clients using web services",
+            "use mixture of WCF and CXF web services using SOAP and WSDL first development",
+            "implemented algorithm to successfully process phone paging data",
+            "developed .NET library to quickly process KML data as .NET types",
+            "primary developer for 2D map interactions and functions",
+            "performed duties using SCRUM management process",
+            "used MS Entity Framework for object relational database modeling",
+            "worked with development team of 9 software engineers to meet schedule and budget goals and requirements"
+          ]
+        },
+        {
+          "name": "Dynamic PDF Generator",
+          "date": "2011",
+          "role": "Lead Software Engineer",
+          "description": "",
+          "skills": {
+            "languages": ["csharp"],
+            "technologies": [".net", "wpf"],
+            "tools": ["visualstudio"],
+            "data": [],
+            "processes": ["agile"]
+          },
+          "work": [
+            "developed PDF generation software to allow Harris product users to dynamically generate field necessary user documentation",
+            "tool is able to parse XML from mapped sources to produce standardized XML output",
+            "integrated COTS PDF library",
+            "led team of 2 developers to realize budget and schedule goals"
+          ]
+        },
+        {
+          "name": "PC Based Phone Paging System",
+          "date": "2009-2010",
+          "role": "Software Engineer",
+          "description": "",
+          "skills": {
+            "languages": ["csharp"],
+            "technologies": [".net", "wpf"],
+            "tools": ["visualstudio"],
+            "data": [],
+            "processes": ["agile"]
+          },
+          "work": [
+            "incorporate SMS alert messaging into existing product to notify user of important system events on desired mobile device",
+            "incorporate SIM balance inquiries for attached HSPA modem with valid SIM",
+            "worked with team of 3 developers to realize budget and schedule goals"
+          ]
+        },
+        {
+          "name": "Sensor Product Controller (Prototype)",
+          "date": "2008-2010",
+          "role": "Software Engineer",
+          "description": "",
+          "skills": {
+            "languages": ["csharp"],
+            "technologies": [".net", "wpf"],
+            "tools": ["visualstudio"],
+            "data": [],
+            "processes": ["agile"]
+          },
+          "work": [
+            "produced sensor controller prototype which could control multiple existing cellular sensor products remotely",
+            "used WPF framework to create rich user interface",
+            "wrapped Google Earth javascript API for use in .NET environment to add map interaction to desktop application",
+            "incorporated Google Earth map into prototype to give user control of sensors via map interface",
+            "interfaced frequently with customer to produce a design which fully met their desires and expectations",
+            "worked with team of 3 developers to realize budget and schedule goals",
+            "this $800k prototype study resulted in a $5M follow on award for additional work"
+          ]
+        }
       ]
     },
     {
@@ -181,7 +289,28 @@
       "location": "Andalusia, AL",
       "date": "August 2003 - August 2007 (20 months of total full time experience)",
       "projects": [
-
+        {
+          "name": "Engineering Co-Op",
+          "date": "2003-2007",
+          "role": "Electrical Engineer",
+          "description": "",
+          "skills": {
+            "languages": [],
+            "technologies": [".net"],
+            "tools": ["visualstudio"],
+            "data": [],
+            "processes": []
+          },
+          "work": [
+            "lead plant lighting upgrade, to move from incandescent lighting to more efficient HID lighting",
+            "generate cost estimate for lighting upgrade, as well as procure replacements from best priced vendor",
+            "upgrade existing on sight weather station and update existing VB based UI to display readings from new weather station",
+            "program Allen Bradley controllers for plant sump pump operation",
+            "develop method for organizing and maintaining CAD drawings",
+            "learn daily power plant operations and procedures",
+            "observe and assist in updating operator screens for Siemens turbine operation"
+          ]
+        }
       ]
     }
   ],
@@ -216,7 +345,8 @@
       },
       "work": [
         "design circuit layout",
-        "determine components to use"
+        "determine components to use",
+        "develop embedded and UX software"
       ]
     },
     {
