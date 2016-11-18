@@ -248,7 +248,7 @@
           "description": "The PC phone paging system allowed the user to manipulate cellular carrier implementation exploits in order to determine certain characteristics of a cellular device. Names and specific operation is withheld for sensitivity reasons.",
           "skills": {
             "languages": ["csharp"],
-            "technologies": [".net", "wpf"],
+            "technologies": [".net", "mfc"],
             "tools": ["visualstudio"],
             "data": [],
             "processes": ["agile"]
@@ -354,7 +354,7 @@
       "description": "Application that allows user to track expenses. Accounts within the application are sharable with other users and can be accessed across multiple devices. Written in cordova and available for both iOS and Android.",
       "skills": {
         "languages": ["javascript"],
-        "technologies": ["nodejs", "gulp", "npm", "rest", "cordova"],
+        "technologies": ["nodejs", "gulp", "npm", "rest", "cordova", "angular"],
         "tools": ["webstorm", "git"],
         "data": ["mongodb"],
         "processes": ["agile"]

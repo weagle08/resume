@@ -189,5 +189,13 @@
   "openvpn": {
     "name": "OpenVPN",
     "path": "images/openvpn-logo.png"
+  },
+  "angular": {
+    "name": "Angular",
+    "path": "images/angular-logo.png"
+  },
+  "mfc": {
+    "name": "MFC",
+    "path": "images/mfc-logo.png"
   }
 }
