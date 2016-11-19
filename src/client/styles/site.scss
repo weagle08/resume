@@ -18,14 +18,34 @@ body {
 }
 
 .loader {
-  border: 16px solid #f3f3f3;
+  border: 1em solid #f3f3f3;
   border-radius: 50%;
-  border-top: 16px solid $color-secondary;
-  border-bottom: 16px solid $color-secondary;
-  width: 120px;
-  height: 120px;
+  border-top: 1em solid $color-secondary;
+  border-bottom: 1em solid $color-secondary;
+  width: 7.5em;
+  height: 7.5em;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
+  margin-top: -4.75em;
+  margin-left: -4.75em;
+}
+
+.loader-success {
+  @extend .loader;
+  border-top-color: $color-success;
+  border-bottom-color: $color-success;
+}
+
+.loader-warn {
+  @extend .loader;
+  border-top-color: $color-warn;
+  border-bottom-color: $color-warn;
+}
+
+.loader-danger {
+  @extend .loader;
+  border-top-color: $color-danger;
+  border-bottom-color: $color-danger;
 }
 
 @-webkit-keyframes spin {
@@ -40,8 +60,8 @@ body {
 
 .centered {
   position: fixed;
-  top: 45%;
-  left: 45%;
+  top: 50%;
+  left: 50%;
 }
 
 @media print

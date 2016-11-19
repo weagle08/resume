@@ -5,11 +5,14 @@ import {inject, bindable} from 'aurelia-framework';
 import {ImageService} from 'services/imageService';
 
 @bindable('skill')
+@bindable('loaderStyle')
 @inject(ImageService)
 export class SkillCard {
     constructor(imageService) {
         this.imageService = imageService;
         this.imageData = '';
+
+        this.loaderStyle = 'loader';
     }
 
     attached() {

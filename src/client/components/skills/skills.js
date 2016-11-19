@@ -37,6 +37,22 @@ export class Skills {
             this.processes = this.processes.concat(p.skills.processes.filter((v) => this.processes.indexOf(v) == -1));
         }
     }
+
+    _getColor(index) {
+        let multer = parseInt(index / 4);
+        index = index - (4 * multer);
+
+        switch (index) {
+            case 1:
+                return 'loader-success';
+            case 2:
+                return 'loader-warn';
+            case 3:
+                return 'loader-danger';
+            default:
+                return 'loader';
+        }
+    }
 }
 
 export class SkillListValueConverter {
