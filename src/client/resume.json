@@ -331,7 +331,7 @@
         "offer users the ability to user other SSO services such as Google, Twitter, or Facebook",
         "secure and encrypt all traffic between the server and clients",
         "provide as an in cloud service",
-	"must be platform independent (runs on Linux, Windows, OsX)
+	"must be platform independent (runs on Linux, Windows, OsX)"
       ]
     },
     {
