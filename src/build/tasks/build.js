@@ -1,56 +1,58 @@
-/**
- * Created by ben on 7/7/16.
- */
-'use strict';
-const gulp = require('gulp');
-const runSequence = require('run-sequence');
-const changed = require('gulp-changed');
-const plumber = require('gulp-plumber');
-const builder = require('gulp-babel');
-const sass = require('gulp-sass');
-const sourcemaps = require('gulp-sourcemaps');
-const compileOptions = require('../babel-options');
-const assign = Object.assign || require('object.assign');
-const notify = require('gulp-notify');
-const browserSync = require('browser-sync');
-const paths = new (require('../paths'))();
-const gulpif = require('gulp-if');
-const argv = require('yargs').argv;
+var gulp = require('gulp');
+var runSequence = require('run-sequence');
+var changed = require('gulp-changed');
+var plumber = require('gulp-plumber');
+var to5 = require('gulp-babel');
+var sourcemaps = require('gulp-sourcemaps');
+var paths = require('../paths');
+var compilerOptions = require('../babel-options');
+var assign = Object.assign;
+var notify = require('gulp-notify');
+var browserSync = require('browser-sync');
+var htmlmin = require('gulp-htmlmin');
+var sass = require('gulp-sass');
 
-gulp.task('build-client-js', () => {
-        return gulp.src(paths.input.js)
-            .pipe(plumber({errorHandler: notify.onError('Error: <% error.message %>')}))
-            .pipe(changed(paths.output.client, {extension: '.js'}))
-            .pipe(gulpif(!argv.production, sourcemaps.init({loadMaps: true})))
-            .pipe(builder(assign({}, compileOptions.systemjs())))
-            .pipe(gulpif(!argv.production, sourcemaps.write({includeContent: true})))
-            .pipe(gulp.dest(paths.output.client));
+gulp.task('build-system', function() {
+  return gulp.src(paths.source)
+    .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
+    .pipe(changed(paths.appOutput, {extension: '.js'}))
+    .pipe(sourcemaps.init({loadMaps: true}))
+    .pipe(to5(assign({}, compilerOptions('systemjs'))))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest(paths.appOutput));
 });
 
-gulp.task('build-html', () => {
-    return gulp.src(paths.input.html)
-        .pipe(changed(paths.output.client, {extension: '.html'}))
-        .pipe(gulp.dest(paths.output.client));
+// copies changed html files to the output directory
+gulp.task('build-html', function() {
+  return gulp.src(paths.html)
+    .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
+    .pipe(changed(paths.output, {extension: '.html'}))
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest(paths.appOutput));
 });
 
-gulp.task('build-sass', function(){
-    return gulp.src(paths.input.sass)
-        .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
-        .pipe(changed(paths.output.client, {extension: '.css'}))
-        .pipe(sass())
-        .pipe(gulp.dest(paths.output.client))
+// copies changed css files to the output directory
+gulp.task('build-sass', function() {
+  return gulp.src(paths.sass)
+    .pipe(changed(paths.output, {extension: '.scss'}))
+    .pipe(sass())
+    .pipe(gulp.dest(paths.appOutput))
+    .pipe(browserSync.stream());
 });
 
 gulp.task('move', function(){
-    return gulp.src(paths.input.moveOnly, {base: 'client'})
-        .pipe(changed(paths.output.client))
-        .pipe(gulp.dest(paths.output.client));
+    return gulp.src(paths.move)
+        .pipe(gulp.dest(paths.output));
 });
 
-gulp.task('build', (callback) => {
-    return runSequence(
-        'clean',
-        ['build-client-js', 'build-html', 'build-sass', 'move'],
-        callback
-    );
+// this task calls the clean task (located
+// in ./clean.js), then runs the build-system
+// and build-html tasks in parallel
+// https://www.npmjs.com/package/gulp-run-sequence
+gulp.task('build', function(callback) {
+  return runSequence(
+    'clean',
+    ['move', 'build-system', 'build-html', 'build-sass'],
+    callback
+  );
 });

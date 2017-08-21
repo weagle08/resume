@@ -1,36 +1,17 @@
-/**
- * Created by ben on 7/7/16.
- */
-'use strict';
-let srcRoot = './';
-let outRoot = './';
+var root = 'client/';
+var appRoot = 'client/';
+var outputRoot = 'www/';
+var exportSrvRoot = 'export/';
 
-module.exports = class Paths {
-    constructor(){
-        let clientRoot = srcRoot + 'client/';
-        let jspm = clientRoot + 'jspm_packages/**/*';
-        let libs = clientRoot + 'libs/**/*';
-        let jspmConfig = clientRoot + 'config.js';
-        let images = clientRoot + 'images/**/*';
-        let img = clientRoot + '**/*.png';
-        let json = clientRoot + '**/*.json';
-        let test = srcRoot + 'test/*.test.js';
-
-        let noBuild = ['!' + jspm, '!' + libs, '!' + jspmConfig, '!./client/js/**/*'];
-        let moveOnly = [jspm, libs, jspmConfig, images, json, img, './client/js/**/*'];
-
-        this.input = {
-            moveOnly: moveOnly,
-            js: noBuild.concat([clientRoot + '**/*.js']),
-            html: noBuild.concat([clientRoot + '**/*.html']),
-            sass: noBuild.concat([clientRoot + '**/*.scss']),
-            json: json,
-            node: [srcRoot + '**/*.js', '!' + 'client/', '!' + 'www/', '!' + 'node_modules/'],
-            test: test
-        };
-
-        this.output = {
-            client: 'www'
-        }
-    }
+module.exports = {
+  root: root,
+  source: [appRoot + '**/*.js', '!' + appRoot + '/jspm_packages/**/*'],
+  html: [appRoot + '**/*.html', '!' + appRoot + 'jspm_packages/**/*'],
+  css: [appRoot + '**/*.css', '!' + appRoot + 'jspm_packages/**/*'],
+  sass: [appRoot + '**/*.scss', '!' + appRoot + 'jspm_packages/**/*'],
+  move: [root + 'libs/**/*', root + 'jspm_packages/**/*'],
+  output: outputRoot,
+  appOutput: outputRoot + '',
+  exportSrv: exportSrvRoot,
+  doc: './doc'
 };

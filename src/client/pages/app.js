@@ -4,6 +4,7 @@
 import {inject} from 'aurelia-framework';
 import {Router} from 'aurelia-router';
 import {HttpClient} from 'aurelia-fetch-client';
+import 'font-awesome';
 
 @inject(Router, HttpClient)
 export class App {

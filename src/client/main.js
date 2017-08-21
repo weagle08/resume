@@ -2,6 +2,7 @@
  * Created by ben on 10/23/16.
  */
 import 'aurelia-polyfills';
+import 'whatwg-fetch';
 import {LogManager} from 'aurelia-framework';
 import {ConsoleAppender} from 'aurelia-logging-console';
 
