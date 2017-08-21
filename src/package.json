@@ -16,7 +16,8 @@
   "author": "weagle08",
   "license": "MIT",
   "devDependencies": {
-    "aurelia-bundler": "^0.4.0",
+    "aurelia-bundler": "^0.6.4",
+    "aurelia-tools": "^1.0.0",
     "babel-core": "^6.25.0",
     "babel-eslint": "^7.2.3",
     "babel-plugin-syntax-flow": "^6.18.0",
@@ -38,7 +39,6 @@
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",
-    "jspm": "^0.16.53",
     "require-dir": "^0.3.2",
     "run-sequence": "^1.2.2",
     "vinyl-paths": "^2.1.0",

@@ -15,7 +15,7 @@ var sass = require('gulp-sass');
 gulp.task('build-system', function() {
   return gulp.src(paths.source)
     .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
-    .pipe(changed(paths.appOutput, {extension: '.js'}))
+    .pipe(changed(paths.output, {extension: '.js'}))
     .pipe(sourcemaps.init({loadMaps: true}))
     .pipe(to5(assign({}, compilerOptions('systemjs'))))
     .pipe(sourcemaps.write())
@@ -42,6 +42,7 @@ gulp.task('build-sass', function() {
 
 gulp.task('move', function(){
     return gulp.src(paths.move)
+        .pipe(changed(paths.output))
         .pipe(gulp.dest(paths.output));
 });
 

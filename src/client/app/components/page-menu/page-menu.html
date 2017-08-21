@@ -1,0 +1,25 @@
+<template>
+    <require from="./page-menu.css"></require>
+
+    <nav class="navbar no-print">
+        <div class="navbar-header">
+            <img class="avatar" src="images/avatar.jpg"/>
+            <div class="navbar-header-title">
+                <h1>Ben Johnson</h1>
+                <span>Software Engineer</span>
+            </div>
+        </div>
+        <div class="menu-sm">
+            <button click.trigger="_onToggleMenuClick()"><i class="fa fa-bars"></i></button>
+            <span class="menu-sm-title">Ben Johnson</span>
+        </div>
+        <ul class="${navClass}" click.delegate="_onMenuItemClick()">
+            <li><a href="#about"><i class="fa fa-pencil" style="color: #FFFF00;"></i><span>About</span></a></li>
+            <li><a href="#skills"><i class="fa fa-wrench" style="color: #e600e5;"></i><span>Skills</span></a></li>
+            <li><a href="#experience"><i class="fa fa-th-list" style="color: #e60000;"></i><span>Experience</span></a></li>
+            <li><a href="#projects"><i class="fa fa-laptop" style="color: #0052cc;"></i><span>Projects</span></a></li>
+            <li><a href="#education"><i class="fa fa-graduation-cap" style="color: #FF5722;"></i><span>Education</span></a></li>
+            <li><a href="#contact"><i class="fa fa-envelope" style="color: #00cc00;"></i><span>Contact</span></a></li>
+        </ul>
+    </nav>
+</template>

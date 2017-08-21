@@ -1,17 +1,17 @@
 var root = 'client/';
-var appRoot = 'client/';
+var appRoot = 'client/app/';
 var outputRoot = 'www/';
 var exportSrvRoot = 'export/';
 
 module.exports = {
   root: root,
-  source: [appRoot + '**/*.js', '!' + appRoot + '/jspm_packages/**/*'],
-  html: [appRoot + '**/*.html', '!' + appRoot + 'jspm_packages/**/*'],
-  css: [appRoot + '**/*.css', '!' + appRoot + 'jspm_packages/**/*'],
-  sass: [appRoot + '**/*.scss', '!' + appRoot + 'jspm_packages/**/*'],
-  move: [root + 'libs/**/*', root + 'jspm_packages/**/*'],
+  source: appRoot + '**/*.js',
+  html: appRoot + '**/*.html',
+  css: appRoot + '**/*.css',
+  sass: appRoot + '**/*.scss',
+  move: [root + '**/*', '!' + appRoot + '**/*'],
   output: outputRoot,
-  appOutput: outputRoot + '',
+  appOutput: outputRoot + 'app/',
   exportSrv: exportSrvRoot,
   doc: './doc'
 };

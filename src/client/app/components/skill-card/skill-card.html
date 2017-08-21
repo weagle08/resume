@@ -1,0 +1,15 @@
+<template>
+    <require from="./skill-card.css"></require>
+
+    <div class="skill-card no-print">
+        <div class="skill-card-img" id.bind="skill">
+            <div style="padding-top: 0.7em;" show.bind="!imageLoaded">
+                <div class="${loaderStyle}" style="font-size: 5px; position: relative; top: 50%; left: 50%; margin-top: 0;"></div>
+            </div>
+            <img show.bind="imageLoaded" style="z-index: 1000;" src.bind="imageData"/>
+        </div>
+        <div class="skill-card-footer">
+            <span>${skillName || skill}</span>
+        </div>
+    </div>
+</template>

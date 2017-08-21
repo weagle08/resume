@@ -1,0 +1,11 @@
+<template>
+    <require from="app/components/resume-section/resume-section.html"></require>
+    <require from="./about.css"></require>
+
+    <resume-section title="about" identifier="about">
+        <div class="about no-print-shadow">
+            <h2>Summary</h2>
+            <p style="margin: 0;">${resume.about.summary}</p>
+        </div>
+    </resume-section>
+</template>

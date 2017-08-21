@@ -1,0 +1,15 @@
+<template>
+    <require from="./experience-card.css"></require>
+    <require from="app/components/project-card/project-card"></require>
+
+    <div class="experience-card no-print-shadow">
+        <div class="experience-card-header">
+            <a href="${experience.link}" target="_blank"><h2>${experience.company}</h2></a>
+            <span> - ${experience.location}</span>
+            <span class="experience-date"><i class="fa fa-calendar"></i> ${experience.date}</span>
+        </div>
+        <div class="experience-card-content">
+            <project-card repeat.for="p of experience.projects" project.bind="p"></project-card>
+        </div>
+    </div>
+</template>
