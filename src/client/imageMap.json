@@ -121,7 +121,7 @@
   },
   "waterfall": {
     "name": "Waterfall",
-    "path": "images/waterfall-logo.png"
+    "path": "images/waterfall.jpg"
   },
   "cmmi3": {
     "name": "CMMI3",
@@ -197,5 +197,17 @@
   "mfc": {
     "name": "MFC",
     "path": "images/mfc-logo.png"
+  },
+  "webpack": {
+    "name": "Webpack",
+    "path": "images/webpack.png"
+  },
+  "typescript": {
+    "name": "Typescript",
+    "path": "images/typescript.png"
+  },
+  "postgres": {
+    "name": "Postgres",
+    "path": "images/postgres.png"
   }
 }
