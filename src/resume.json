@@ -1,0 +1,382 @@
+{
+    "profile": {
+        "firstName": "Benjamin",
+        "lastName": "Johnson",
+        "email": "ben.s.johnson@live.com",
+        "phone": "334-740-6353",
+        "github": "https://github.com/weagle08",
+        "clearance": true,
+        "about": ""
+    },
+    "experience": [
+        {
+            "company": "Northrop Grumman",
+            "link": "http://www.northropgrumman.com/",
+            "location": "Huntsville, AL",
+            "date": "11/2017 - Present",
+            "title": "Software Engineer III",
+            "projects": [
+                {
+                    "name": "Integrated Air and Missile Defense Battle Command System (IBCS)",
+                    "date": "11/2017 - Present",
+                    "role": "Software Developer",
+                    "description": "IBCS is a command-and-control (C2) system developed to deliver a single view of a battlespace. I currently work with the embedded trainer team to develop a realistic training module. The training module allows soliders to select a predefined training scenario, and the trainer will then proceed to test the soliders responses to the selected scenario simulating the battlefield as close to real life situations as possible. I primarily work in the simulation engine which interprets XML based scenarios and plays them back.",
+                    "technologies": {
+                        "languages": [
+                            "cpp",
+                            "java",
+                            "xml"
+                        ],
+                        "frameworks": [],
+                        "tools": [
+                            "eclipse",
+                            "rhel",
+                            "jira",
+                            "svn"
+                        ],
+                        "data": [],
+                        "process": [
+                            "spiral"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "company": "Colsa Corporation",
+            "link": "http://www.colsa.com/",
+            "location": "Huntsville, AL",
+            "date": "01/2017 - 11/2017",
+            "title": "Software Engineer III",
+            "projects": [
+                {
+                    "name": "PRIME",
+                    "date": "01/2017 - 11/2017",
+                    "role": "Software Team Lead",
+                    "description": "",
+                    "technologies": {
+                        "languages": [
+                            "c-sharp",
+                            "typescript",
+                            "html",
+                            "css"
+                        ],
+                        "frameworks": [
+                            "angular",
+                            "entity-framework",
+                            "web-api-2",
+                            "webpack",
+                            "npm",
+                            "rest",
+                            "tls",
+                            "dot-net"
+                        ],
+                        "tools": [
+                            "windows",
+                            "visual-studio",
+                            "visual-studio-code",
+                            "git",
+                            "jira"
+                        ],
+                        "data": [
+                            "mssql"
+                        ],
+                        "process": [
+                            "agile"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "company": "SAIC",
+            "link": "http://www.saic.com/",
+            "location": "Huntsville, AL",
+            "date": "10/2012 - 01/2017",
+            "title": "Software Engineer III",
+            "projects": [
+                {
+                    "name": "XWALK",
+                    "date": "04/2016 - 01/2017",
+                    "role": "Software Team Lead",
+                    "description": "",
+                    "technologies": {
+                        "languages": [
+                            "javascript",
+                            "html",
+                            "scss"
+                        ],
+                        "frameworks": [
+                            "aurelia",
+                            "nodejs",
+                            "expressjs",
+                            "gulp",
+                            "jspm",
+                            "jquery",
+                            "npm",
+                            "rest",
+                            "tls"
+                        ],
+                        "tools": [
+                            "windows",
+                            "web-storm",
+                            "git",
+                            "tfs"
+                        ],
+                        "data": [
+                            "mongodb"
+                        ],
+                        "process": [
+                            "agile"
+                        ]
+                    }
+                },
+                {
+                    "name": "Aviation Data Exploitation Capability (ADEC) Central Database (ACD)",
+                    "date": "03/2015 - 07/2016",
+                    "role": "Software Team Lead",
+                    "description": "",
+                    "technologies": {
+                        "languages": [
+                            "javascript"
+                        ],
+                        "frameworks": [
+                            "aurelia",
+                            "nodejs",
+                            "expressjs",
+                            "gulp",
+                            "jspm",
+                            "npm",
+                            "rest",
+                            "tls"
+                        ],
+                        "tools": [
+                            "windows",
+                            "visual-studio",
+                            "web-storm",
+                            "git",
+                            "tfs",
+                            "ssis"
+                        ],
+                        "data": [
+                            "mongodb",
+                            "qlik"
+                        ],
+                        "process": [
+                            "agile"
+                        ]
+                    }
+                },
+                {
+                    "name": "ADEC - Analysis and Visualization System (AVS)",
+                    "date": "10/2012 - 03/2015",
+                    "role": "Software Engineer",
+                    "description": "",
+                    "technologies": {
+                        "languages": [
+                            "c-sharp",
+                            "xaml",
+                            "javascript"
+                        ],
+                        "frameworks": [
+                            "dot-net",
+                            "wcf",
+                            "rest",
+                            "wpf",
+                            "entity-framework",
+                            "nodejs",
+                            "gdal",
+                            "xna"
+                        ],
+                        "tools": [
+                            "windows",
+                            "visual-studio",
+                            "web-storm",
+                            "git",
+                            "tfs",
+                            "geoserver",
+                            "uml"
+                        ],
+                        "data": [
+                            "mssql",
+                            "mongodb"
+                        ],
+                        "process": [
+                            "agile"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "company": "HDI Solutions",
+            "link": "http://www.hdisolutions.com/",
+            "location": "Auburn, AL",
+            "date": "11/2011 - 10/2012",
+            "title": "Software Developer",
+            "projects": [
+                {
+                    "name": "Electronic Case Management System (eCASE)",
+                    "date": "11/2011 - 10/2012",
+                    "role": "Software Developer",
+                    "description": "",
+                    "technologies": {
+                        "languages": [
+                            "c-sharp",
+                            "html",
+                            "css"
+                        ],
+                        "frameworks": [
+                            "dot-net-mvc"
+                        ],
+                        "tools": [
+                            "windows",
+                            "visual-studio",
+                            "vss",
+                            "jira"
+                        ],
+                        "data": [
+                            "mssql"
+                        ],
+                        "process": [
+                            "agile"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "company": "Harris Corporation",
+            "link": "https://www.harris.com/",
+            "location": "Melbourne, FL",
+            "date": "06/2008 - 11/2011",
+            "title": "Software Engineer II",
+            "projects": [
+                {
+                    "name": "Guardian",
+                    "date": "06/2008 - 11/2011",
+                    "role": "Software Engineer",
+                    "description": "",
+                    "technologies": {
+                        "languages": [
+                            "c-sharp",
+                            "xaml"
+                        ],
+                        "frameworks": [
+                            "dot-net",
+                            "wpf",
+                            "wcf",
+                            "google-maps-api"
+                        ],
+                        "tools": [
+                            "windows",
+                            "visual-studio",
+                            "clear-case",
+                            "jira",
+                            "open-vpn",
+                            "gsm"
+                        ],
+                        "data": [
+                            "sqlite"
+                        ],
+                        "process": [
+                            "agile"
+                        ]
+                    }
+                },
+                {
+                    "name": "Dynamic PDF Generator",
+                    "date": "2010",
+                    "role": "Software Team Lead",
+                    "description": "",
+                    "technologies": {
+                        "languages": [
+                            "c-sharp",
+                            "xaml"
+                        ],
+                        "frameworks": [
+                            "dot-net",
+                            "wpf"
+                        ],
+                        "tools": [
+                            "windows",
+                            "visual-studio",
+                            "clear-case",
+                            "jira"
+                        ],
+                        "data": [
+                            "sqlite"
+                        ],
+                        "process": [
+                            "agile"
+                        ]
+                    }
+                },
+                {
+                    "name": "PC Based Phone Paging System",
+                    "date": "2009 - 2010",
+                    "role": "Software Engineer",
+                    "description": "",
+                    "technologies": {
+                        "languages": [
+                            "cpp"
+                        ],
+                        "frameworks": [
+                            "mfc"
+                        ],
+                        "tools": [
+                            "windows",
+                            "visual-studio",
+                            "clear-case",
+                            "jira"
+                        ],
+                        "data": [
+                            "mssql"
+                        ],
+                        "process": [
+                            "agile"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "company": "Power South Energy",
+            "link": "http://www.powersouth.com/",
+            "location": "Andalusia, AL",
+            "date": "18 Months Full-Time",
+            "title": "Electrical Engineering Co-op",
+            "projects": [
+                {
+                    "name": "Co-op Tasks",
+                    "date": "2003 - 2007",
+                    "role": "Co-op",
+                    "description": "",
+                    "technologies": {
+                        "languages": [
+                            "vb"
+                        ],
+                        "frameworks": [
+                            "dot-net"
+                        ],
+                        "tools": [
+                            "windows",
+                            "visual-studio"
+                        ],
+                        "data": [],
+                        "process": []
+                    }
+                }
+            ]
+        }
+    ],
+    "education": [
+        {
+            "school": "Auburn University",
+            "link": "http://www.auburn.edu",
+            "location": "Auburn, AL",
+            "date": "2002 - 2008",
+            "degree": "Electrical Computer Engineering"
+        }
+    ]
+}

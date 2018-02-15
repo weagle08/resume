@@ -1,0 +1,31 @@
+{
+  "name": "resume",
+  "version": "2.0.0",
+  "description": "resume for ben johnson",
+  "main": "\"\"",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weagle08/resume.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/weagle08/resume/issues"
+  },
+  "homepage": "https://github.com/weagle08/resume#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-typescript": "^3.2.4",
+    "jspm": "^0.16.53",
+    "typescript": "^2.6.2"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "src"
+    },
+    "devDependencies": {}
+  }
+}
